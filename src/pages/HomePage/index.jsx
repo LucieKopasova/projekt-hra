@@ -1,3 +1,4 @@
+import { Exams } from '../../components/shuffler/shuffler';
 import './style.css';
 
 export const HomePage = () => {
@@ -7,7 +8,7 @@ export const HomePage = () => {
         <h1>Výprava Batoně</h1>
       </header>
       <main>
-        <p></p>
+        <Exams />
       </main>
       <footer></footer>
     </div>
