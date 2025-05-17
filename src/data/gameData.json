@@ -1,0 +1,126 @@
+[
+  {
+    "id": 0,
+    "target": 10, 
+    "name": "start",
+    "story": "Batoň vyráží, hurá na cestu! První kopeček hned ukáže, jestli si umí dobře rozložit síly.",
+    "success": "Vyšlapal to s přehledem – paráda!",
+    "fail": "Uf, uf… hned na začátku se trochu zadýchal.",
+    "again": "Batoň se rozběhl, ale v půlce kopce mu došly síly. Musíš mu trochu přidat, jinak nevyrazí dál.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 1,
+    "target": 10,
+    "name": "klada",
+    "story": "Přes cestu leží silná kláda. Pomůžeš mu najít správnou cestu, jak ji překonat?",
+    "success": "Přehoupl se přes ni jako nic.",
+    "fail": "Zamotal se do větví – trošku ho to unavilo.",
+    "again": "Zkusil přeskočit, ale potřebuje víc síly.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 2,
+    "target": 10,
+    "name": "potok",
+    "story": "Cesta vede přes potok. Batoň se chystá ke skoku – kolik energie na to bude potřebovat?",
+    "success": "Přeskočil na první dobrou – ponožky zůstaly suché!",
+    "fail": "Tentokrát to nevyšlo, šlápl vedle a má mokré ponožky. Brrr!",
+    "again": "Nedošlápl! Skončil zpátky na břehu. Zkus to znova.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 3,
+    "target": 10,
+    "name": "stoupani",
+    "story": "Teď to jde pořádně do kopce. Batoň musí pořádně zabrat – nebo si to chytře rozloží?",
+    "success": "Zabral a je nahoře – s úsměvem!",
+    "fail": "Kopec mu dal zabrat – funí jak lokomotiva!",
+    "again": "Už v půlce kopce lapal po dechu. Chce to víc energie.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 4,
+    "target": 10,
+    "name": "svacina",
+    "story": "Zastávka na svačinu. Copak si vybere, aby načerpal síly?",
+    "success": "Dobrá volba – má novou sílu do nohou.",
+    "fail": "Přejedl se víc, než potřeboval – a teď se mu jde těžko dál.",
+    "again": "Dal si jen malou svačinu – hlad má pořád. Bude to chtít něco přidat.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 5,
+    "target": 10,
+    "name": "liska",
+    "story": "Blíží se večer. Batoň si rozdělal oheň, povečeřel a chystá se do spacáku. Jenže z křoví ho sleduje zvědavá liška…",
+    "success": "Zachumlal se do spacáku, zásoby schoval – noc přežil jako král.",
+    "fail": "Zapomněl si schovat batoh – drzá liška mu odnesla část zásob. Vystačí mu energie až do cíle?",
+    "again": "Nestihl si schovat batoh – liška se přiblížila! Možná to ještě stihne zachránit.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 6,
+    "target": 10,
+    "name": "most",
+    "story": "Batoň dorazil k visutému mostu. Houpá se ve větru a vypadá dost vratce… Přejde ho v klidu, nebo se mu zamotají nohy?",
+    "success": "Šel pomalu, soustředěně – přešel až na druhou stranu jako profík!",
+    "fail": "Zavrávoral uprostřed – musel se přidržet lana. Trochu ho to vyčerpalo.",
+    "again": "Přešel jen kousek – musel se otočit zpátky. Ještě jednou, tentokrát s jistotou.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 7,
+    "target": 10,
+    "name": "blato",
+    "story": "Bláto až po kotníky! Pomoz Batoňovi projít suchou cestou.",
+    "success": "Šel opatrně – boty zůstaly čisté a nálada skvělá.",
+    "fail": "Uklouzl, bota zůstala v bahně a je vyčerpaný!",
+    "again": "Udělal pár kroků, ale dál to nešlo. Potřebuje víc sil na celý přechod.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 8,
+    "target": 10,
+    "name": "chata",
+    "story": "Před posledním úsekem dorazil Batoň k horské chatě. Může tu načerpat síly.",
+    "success": "Vyspal se v teple, dal si čaj – ráno je svěží a připravený na poslední výšlap.",
+    "fail": "Spal jen chvíli na lavici – ráno je celý rozlámaný.",
+    "again": "Zabral si jen kraj lavice – moc si neodpočinul. Potřebuje více energie.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 9,
+    "target": 10,
+    "name": "finale",
+    "story": "Už vidí cíl! Ještě kousek, sebrat poslední síly a je v cíli!",
+    "success": "Hotovo! Batoň to zvládl – celou výpravu ušel vlastními silami! Hurá do cíle!",
+    "fail": "Tak blízko, ale ještě mu chybí trochu sil – příště si to líp naplánuje.",
+    "again": "Udělal krok, ale zastavil se těsně před cílem. Musí to zkusit ještě jednou – ale moc sil už nezbývá.",
+    "mapImage": "#",
+    "actionImage": "#"
+  },
+  {
+    "id": 10,
+    "target": 10,
+    "name": "vyhra",
+    "story": "Hurá! Batoň dorazil až do cíle. Celou cestu šetřil síly, překonal překážky a došel až na konec.Bez tebe by to nezvládl – skvělá práce!",
+    "actionImage": "#"
+  },
+  {
+    "id": 10,
+    "target": 10,
+    "name": "prohra",
+    "story": "Batoň se snažil, ale tentokrát mu síly došly těsně před cílem. Nevadí – příště to určitě zvládne líp. Jsi připravený zkusit to znovu?",
+    "actionImage": "#"
+  }
+]
