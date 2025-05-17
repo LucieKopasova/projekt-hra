@@ -1,3 +1,4 @@
+import './shuffler.css';
 import examples from '../../data/examples.json';
 
 // hodnota přkážky
@@ -47,7 +48,9 @@ export const Exams = ({}) => {
 
         {shuffledResults.map((result, id) => (
           <div>
-            <button key={id}>{result}</button>
+            <button className="button--result" key={id}>
+              {result}
+            </button>
             <br />
           </div>
         ))}
