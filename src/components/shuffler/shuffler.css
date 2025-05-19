@@ -12,3 +12,8 @@
   background-color: #fff9db;
   margin-bottom: 10px;
 }
+
+.button--result:hover,
+.button--result:active {
+  background-color: rgb(238, 210, 98);
+}
