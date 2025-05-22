@@ -1,4 +1,5 @@
 import { Exams } from '../../components/shuffler/shuffler';
+import { TypewriterText } from '../../components/TypewriterText/TypewriterText';
 import './style.css';
 
 export const HomePage = () => {
@@ -9,6 +10,7 @@ export const HomePage = () => {
       </header>
       <main>
         <Exams />
+        <TypewriterText/>
       </main>
       <footer></footer>
     </div>
