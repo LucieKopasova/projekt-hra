@@ -1,4 +1,4 @@
-import { Exams } from '../../components/shuffler/shuffler';
+import { HealthBar } from '../../components/health/health';
 import { Soundtrack } from '../../components/soundtrack.jsx/soundtrack';
 import { TypewriterText } from '../../components/TypewriterText/TypewriterText';
 import './style.css';
@@ -11,7 +11,7 @@ export const HomePage = () => {
         <h1>Výprava Batoně</h1>
       </header>
       <main>
-        <Exams />
+        <HealthBar />
         <TypewriterText />
       </main>
       <footer></footer>

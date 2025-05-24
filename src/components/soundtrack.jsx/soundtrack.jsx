@@ -5,16 +5,18 @@ import './soundtrack.css';
 
 export const Soundtrack = () => {
   const [play, { stop }] = useSound(soundtrackSong);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
-  /*   useEffect(() => {
-    const handleMusicClick = () => {
-      play();
-      setIsPlaying(true);
+  useEffect(() => {
+    play();
+    /* const handleMusicClick = () => {
+    
+     setIsPlaying(true);
+      document.removeEventListener('click', handleMusicClick);
     };
-    document.addEventListener('click', handleMusicClick);
+    document.addEventListener('click', handleMusicClick); */
   }, []);
- */
+
   const toggleSound = () => {
     if (isPlaying === true) {
       stop();

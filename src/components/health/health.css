@@ -1,0 +1,13 @@
+.healthBar {
+  color: #333;
+  font-size: 1.3rem;
+  text-align: center;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  background-color:
+    #9c9b93;
+  margin-bottom: 10px;
+  align-items: center;
+}
