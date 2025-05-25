@@ -15,29 +15,32 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-  },
-  {
-    path: '/uvod',
-    element: <HomePage />,
-  },
-  {
-    path: '/pravidla',
-    element: <RulesPage />,
-  },
-  {
-    path: '/pribeh',
-    element: <StoryPage />,
-  },
-  {
-    path: '/hra',
-    element: <GamePage />,
-  },
-  {
-    path: '/devpage',
-    element: <DevPage />,
+    children: [
+      {
+        path: 'uvod',
+        element: <HomePage />,
+      },
+      {
+        path: 'pravidla',
+        element: <RulesPage />,
+      },
+      {
+        path: 'pribeh',
+        element: <StoryPage />,
+      },
+      {
+        path: 'hra',
+        element: <GamePage />,
+      },
+      {
+        path: 'devpage',
+        element: <DevPage />,
+      }
+    ]
   }
- 
+
 ]);
+
 
 createRoot(document.querySelector('#app')).render(
   <RouterProvider router={router} />
