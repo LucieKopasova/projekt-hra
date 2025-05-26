@@ -1,0 +1,83 @@
+.homepage-background {
+    background-image: url('../../assets/101_uvod.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #333;
+}
+
+.homepage-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 1647px;
+    max-height: 1080px;
+}
+
+.homepage-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.homepage-header {
+    display: flex;
+    justify-content: end;
+}
+
+.sound-toggle {
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 10rem;
+}
+
+.btn {                   
+  font-size: 4rem;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.1s ease-in-out;
+}
+
+.btn-rules {
+  background-color: #fdd835;      
+  color: #333;                    
+  box-shadow: 2px 4px 0 #c6a700;  
+}
+
+.btn-rules:hover {
+  transform: scale(1.05);
+}
+
+.btn-start {
+  background-color: #4caf50;      
+  color: white;
+  box-shadow: 2px 4px 0 #388e3c;
+}
+
+.btn-start:hover {
+  transform: scale(1.05);
+}

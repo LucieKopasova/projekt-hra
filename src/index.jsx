@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: 'uvod',
+        path: '',
         element: <HomePage />,
       },
       {
