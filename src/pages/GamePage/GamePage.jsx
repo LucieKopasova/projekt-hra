@@ -1,3 +1,9 @@
+import { GameLevel } from "../../components/GameLevel/GameLevel"
+
 export const GamePage = () => {
-    return <h1>Hra</h1>
+    return (
+        <GameLevel/>
+        
+   
+    )
 }

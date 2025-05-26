@@ -6,7 +6,7 @@ export const HomePage = () => {
     return (
         <div className="background homepage-background">  
    
-            <div className="homepage-content">
+            <div className="content homepage-content">
 
 
                 <header className="homepage-header">
