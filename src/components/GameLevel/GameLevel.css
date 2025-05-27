@@ -21,6 +21,14 @@
     
 }
 
+header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100px;
+}
+
 /* Header */
 
 
@@ -29,13 +37,7 @@
    
 }
 
-header {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 100px;
-}
+
 
 
 /* tlačítka domů a zvuk */

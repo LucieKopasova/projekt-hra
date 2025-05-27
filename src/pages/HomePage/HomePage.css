@@ -22,6 +22,14 @@
     
 }
 
+header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100px;
+}
+
 
 /* ⬆️ Nahoře - společné CSS */
 
@@ -45,10 +53,7 @@ h1 {
     flex-grow: 1;
 }
 
-.homepage-header {
-    display: flex;
-    justify-content: end;
-}
+
 
 .sound-toggle {
     margin-right: 2rem;

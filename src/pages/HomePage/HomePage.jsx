@@ -9,10 +9,12 @@ export const HomePage = () => {
             <div className="content homepage-content">
 
 
-                <header className="homepage-header">
-                    <button className="sound-toggle">
-                        zvuk     {/* bude doplněna ikona */}
-                    </button>
+                <header className="header homepage-header">
+                        <div className="header-buttons">
+                        <button className="header-btn sound-toggle">
+                            zvuk     {/* bude doplněna ikona */}
+                        </button>
+                    </div>
                 </header>
 
                 <main className="homepage-main">
