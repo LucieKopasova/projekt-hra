@@ -50,15 +50,6 @@ const shuffleArray = (array) => {
 };
 const shuffledResults = shuffleArray(resultArray);
 
-export const Result = ({}) => {
-  return (
-    <>
-      <h2>výsledek</h2>
-      <p></p>
-    </>
-  );
-};
-
 export const Exams = ({ onExams }) => {
   const [play] = useSound(soundclik);
 
