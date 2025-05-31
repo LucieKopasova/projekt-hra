@@ -1,0 +1,149 @@
+:root {
+  /* Barvy */
+  --color-text: #333;
+  --color-primary: #fff9db;
+  --color-secondary: rgb(238, 210, 98);
+
+  /* Stíny a rámečky */
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  --border: 2px solid var(--color-text);
+  --border-radius: 8px;
+
+  /* Fonty */
+  --font-size-normal: 3rem;
+  --font-size-smaller: 1.5rem;
+
+  /* Layout */
+  --max-width-container: 1650px;
+  --max-height-container: 1078px;
+}
+
+/* Background */
+.Gamelevel-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5% 10%;
+}
+
+@media (max-width: 1650px) {
+  .Gamelevel-background {}
+}
+
+/* Layout GameLevel - grid */
+.GameLevel-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.GameLevel-area-container1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 16% 16% 53% 15%;
+  grid-template-areas:
+    " header header header header header "
+    " result-exams  result-exams  .  result-blocker result-blocker "
+    "exams exams . blocker blocker"
+    "footer footer footer footer footer";
+  width: 100%;
+  max-width: var(--max-width-container);
+  max-height: var(--max-height-container);
+}
+
+.GameLevel-header {
+  grid-area: header;
+  align-self: center;
+}
+
+.GameLevel-result-exams {
+  grid-area: result-exams;
+  justify-self: center;
+}
+
+.GameLevel-result-blocker {
+  grid-area: result-blocker;
+  justify-self: center;
+}
+
+.GameLevel-main-exams {
+  grid-area: exams;
+  justify-self: center;
+}
+
+.GameLevel-main-blocker {
+  grid-area: blocker;
+}
+
+.GameLevel-footer {
+  grid-area: footer;
+}
+
+/* Tlačítko */
+.GameLevel-exams-btn {
+  display: block;
+  color: var(--color-text);
+  font-size: var(--font-size-normal);
+  font-weight: 600;
+  width: 450px;
+  height: 100px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-primary);
+  margin-bottom: 4.45%;
+}
+
+.GameLevel-exams-btn:hover,
+.GameLevel-exams-btn:active {
+  background-color: var(--color-secondary);
+}
+
+/* Výsledky */
+.GameLevel-result {
+  font-size: 2.5rem;
+  /* Zatím nemáš proměnnou pro tuto velikost, ponecháno takto */
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: baseline;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: 100px;
+  height: 100px;
+}
+
+/* Příběh */
+.GameLevel-story-container {
+  font-size: var(--font-size-smaller);
+  background: rgba(255, 249, 219, 0.8);
+  /* Neexistuje proměnná, ponecháno */
+  height: 100%;
+  position: relative;
+}
+
+.GameLevel-story-btn {
+  font-size: 2rem;
+  /* Zatím nemáš proměnnou, ponecháno */
+  background-color: #959292;
+  /* Neexistuje proměnná, ponecháno */
+  position: absolute;
+  right: 5%;
+}
+
+/* Skóre */
+.Game-level-score {
+  background-color: rgb(204, 202, 202);
+  /* Neexistuje proměnná, ponecháno */
+  width: 359px;
+  height: 119px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

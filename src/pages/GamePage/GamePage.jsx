@@ -1,9 +1,8 @@
-import { GameLevel } from "../../components/GameLevel/GameLevel"
+import { GameLevel } from '../../components/GameLevel/GameLevel';
+import { GameLevel1 } from '../../components/GameLevel/GameLevel1';
 
 export const GamePage = () => {
-    return (
-        <GameLevel/>
-        
-   
-    )
-}
+  let i = 2;
+
+  return <>{i === 1 ? <GameLevel /> : <GameLevel1 />}</>;
+};

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './health.css';
 import { Exams } from '../shuffler/shuffler';
 import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
+import { GameMap } from '../GameMap/GameMap';
 
 export const HealthBar = () => {
   const [health, sethealth] = useState('100');
@@ -11,14 +12,26 @@ export const HealthBar = () => {
     setresultTarget(id);
     sethealth((currentHealth) => currentHealth - Number(id));
   };
-  console.log(health);
-  return (
-    <>
-      <div className="healthBar">
-        <h2>{health}</h2>
-      </div>
-      <GameshufflerResult resultTarget={resultTarget} />
-      <Exams onExams={handleClick} />
-    </>
-  );
+
+  const contentGame = () => {
+    if (health < 60) {
+      return (
+        <>
+          <div className="healthBar">
+            <h2>{health}</h2>
+          </div>
+          <GameMap />
+        </>
+      );
+    }
+    return (
+      <>
+        <div className="healthBar">
+          <h2>{health}</h2>
+        </div>
+        <GameshufflerResult resultTarget={resultTarget} />
+        <Exams onExams={handleClick} />
+      </>
+    );
+  };
 };
