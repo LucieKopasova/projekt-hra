@@ -36,6 +36,8 @@ export const GameLevel = () => {
                         </div>
                     </div>
 
+                    
+
                     <div className="challenge-container">
                         <div className="examples-panel">
 
