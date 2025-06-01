@@ -34,7 +34,10 @@ export const GameLevel2 = () => {
         <section className="blocker"></section>
 
         <footer className="footer">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, cupiditate!
+            <div className='story-wrapper'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente quasi ratione alias cupiditate! Molestiae dolores minima ratione beatae dolorem.</p>
+            <button className="continue-button">Pokračovat</button>
+            </div>
         </footer>
 
       </div>
