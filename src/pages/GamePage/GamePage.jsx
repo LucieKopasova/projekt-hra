@@ -1,9 +1,33 @@
-import { GameLevel } from '../../components/GameLevel/GameLevel';
-import { GameLevel1 } from '../../components/GameLevel/GameLevel1';
-import { GameLevel2 } from '../../components/GameLevel/GameLevel2';
+import "/global.css";
+import { GameContainer } from '../../components/GameContainer/GameContainer';
+import { HeaderGamePage } from '../../components/HeaderGamePage/HeaderGamePage';
 
 export const GamePage = () => {
-  let i = 1;
 
-  return <>{i === 1 ? <GameLevel2 /> : <GameLevel1 />}</>;
+  return (
+    <div className="page-wrapper">
+
+
+      <HeaderGamePage />
+
+
+
+
+
+      <GameContainer/>
+
+
+
+
+
+
+      
+
+    </div>
+
+  );
+
+
+
 };
+
