@@ -1,4 +1,4 @@
-import cedule from '/assets/cedule.png';
+
 
 export const StoryPage = () => {
   return (

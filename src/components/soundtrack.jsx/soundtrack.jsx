@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useSound from 'use-sound';
-import soundtrackSong from '../../sounds/dragons.mp3';
+import soundtrackSong from '../../sounds/soundForest.mp3';
 import './soundtrack.css';
 
 export const Soundtrack = () => {
