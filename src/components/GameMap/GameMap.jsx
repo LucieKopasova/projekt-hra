@@ -3,7 +3,12 @@ import './GameMap.css';
 export const GameMap = () => {
   return (
     <>
-      <div className="MapImage"></div>
-    </>
-  );
+    
+    <img src="/../assets/201_cil.png" />
+   
+    <button className="continue-btn continue-btn--map">Pokračovat</button>
+    
+     </>
+  )
 };
+
