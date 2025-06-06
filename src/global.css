@@ -3,7 +3,7 @@
   --color-text_border: #2c2619;
   --color-background_title: #efd6a0;
   --color-background_title-opacity: rgba(239, 214, 160, 0.88);
-  
+
 
   /* Stíny a rámečky */
   --box-shadow:
@@ -58,14 +58,16 @@ html {
   height: 78px;
   font-size: var(--font-size-titles);
   text-indent: -18px;
-  right: 0rem;
+  right: 0.5rem;
   bottom: 1rem;
   z-index: 998;
-  
+  position: fixed;
+
 }
 
 .gameLevel-arrow-position {
-flex: 1 0 auto;
+  flex: 1 0 auto;
+  position: static;
 }
 
 /* 0. Icony (Lucka) */
@@ -155,16 +157,14 @@ flex: 1 0 auto;
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding-top: 3rem;
-  padding-left: 2rem;
+  padding: 3rem 0 2rem 2rem;
 }
 
 .rulesPage-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30rem;
-  height: 38rem;
+  width: 50%;
   background-color: var(--color-background_title-opacity);
   border-radius: var(--border-radius);
   padding: 2rem;
@@ -180,30 +180,24 @@ flex: 1 0 auto;
   flex: 2 1 auto;
 }
 
-.arrow-container {
-  display: flex;
-  justify-content: flex-end;
-}
 
 
 /* 3. Příběh */
 
 .storyPage-content {
-  background-image: url(./assets/203_pravidla.png);
+  background-image: url(./assets/202_pribeh.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding-top: 3rem;
-  padding-left: 2rem;
+  padding: 3rem 0 2rem 2rem;
 }
 
 .storyPage-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30rem;
-  height: 38rem;
+  width: 40%;
   background-color: var(--color-background_title-opacity);
   border-radius: var(--border-radius);
   padding: 2rem;
@@ -238,8 +232,8 @@ img {
   display: grid;
   grid-template-columns: 1fr repeat(5, minmax(0, 1fr)) 1fr;
   grid-template-rows: 15% auto 15%;
-  grid-template-areas: 
-  "header header header header header header header"
+  grid-template-areas:
+    "header header header header header header header"
     ". game game game game game ."
     "footer footer footer footer footer footer footer";
   width: 100vw;
@@ -397,7 +391,7 @@ příklady */
   display: flex;
   justify-content: space-between;
   align-items: center;
-/*   gap: 5rem; */
+  /*   gap: 5rem; */
   background-color: rgb(239, 214, 160, 0.8);
 }
 

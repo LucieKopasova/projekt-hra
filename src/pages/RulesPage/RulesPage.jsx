@@ -15,8 +15,7 @@ export const RulesPage = () => {
           dojde až do cíle dřív, než mu dojde energie.
         </p>
       </section>
-      <section className="arrow-container"><button className="arrow">Pokračovat</button></section>
-      
+      <button className="arrow">Pokračovat</button>
     </div>
   );
 };
