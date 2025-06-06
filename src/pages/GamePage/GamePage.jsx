@@ -1,6 +1,7 @@
 import "/global.css";
 import { GameContainer } from '../../components/GameContainer/GameContainer';
-import { HeaderGamePage } from '../../components/HeaderGamePage/HeaderGamePage';
+import { EnergyBar } from "../../components/EnergyBar/EnergyBar";
+
 
 export const GamePage = () => {
 
@@ -8,7 +9,7 @@ export const GamePage = () => {
     <div className="page-wrapper">
 
 
-      <HeaderGamePage />
+      <EnergyBar />
 
 
 

@@ -3,7 +3,7 @@ import '/global.css';
 import gameData from '../../data/gameData.json';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 
-export const GameLevel = () => {
+export const HappyEnd = () => {
   return (
     <>
     

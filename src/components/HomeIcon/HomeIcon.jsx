@@ -2,7 +2,7 @@ export const HomeIcon = () => {
     return (
         <div style={{ 
             border: "3px solid #412f01",
-            background: "linear-gradient(to bottom, #c8ab63, #a17e3e)", 
+            background: "linear-gradient(to bottom,rgb(185, 160, 102), #a17e3e)", 
             borderRadius: "7px", 
             backgroundColor: "#b79b57", 
             width: "50px", 
