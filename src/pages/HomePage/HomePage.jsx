@@ -1,5 +1,5 @@
 import gameData from '../../data/gameData.json';
-import './HomePage.css';
+
 
 export const HomePage = () => {
   return (

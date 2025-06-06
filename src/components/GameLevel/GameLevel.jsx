@@ -1,12 +1,13 @@
 
 import { FooterGameLevel } from '../FooterGameLevel/FooterGameLevel';
 import '/global.css';
+import gameData from '../../data/gameData.json';
 
 export const GameLevel = () => {
   return (
     <>
     
-    <img src="/../assets/12_klada.png" />
+    <img src={gameData[0].actionImage}/>
    
     <div className="gamelevel-game">
 
