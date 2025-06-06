@@ -118,7 +118,7 @@ html {
 .homepage-btn-start {
   all: unset;
   font-size: var(--font-size-bigger);
-  background-image: url(../public/04_sipka-hrát.png);
+  background-image: url(/assets/04_sipka-hrát.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
