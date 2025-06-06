@@ -13,14 +13,14 @@ body,
 
 
 html {
-  font-family: 'Open Sans', sans-serif;
-
+  font-family: "Baloo 2", sans-serif;
+  color: var(--color-text)
 }
 
 :root {
   /* Barvy */
-  --color-text: #333;
-  --color-text-btn: #2e4007;
+  --color-text: #2c2619;
+  /* --color-text-btn: #2e4007; není potřeba */
   --color-exampels-background: #efd6a0;
   --color-examples-border: var(--color-text-btn);
 
@@ -41,11 +41,105 @@ html {
   /* Layout */
   --max-width-container: 1650px;
   --max-height-container: 1078px;
+
+
+
+  /* styly Lucka */
+  --font-size-h1: 7rem;
+  /* hlavní nadpis */
+
+
+}
+
+/* 0. Icony (Lucka) */
+.app-icons {
+  display: flex;
+  gap: 14px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+}
+
+.icon-soundSwitch {
+  background-color: transparent;
+  border: none;
+  background-image: url(assets/03_SoundOn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 56px;
+}
+
+.icon-homeButton {
+  background-color: transparent;
+  border: none;
+  background-image: url(assets/01_home.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 56px;
+}
+
+/* 1. Start (Lucka) */
+
+.homepage-content {
+
+  background-image: url(/assets/201_uvod_s\ tyčí.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.game-title {
+  font-family: "Luckiest Guy", cursive;
+  color: var(--color-exampels-background);
+  font-size: var(--font-size-h1);
+  justify-content: center;
+  margin-top: 4rem;
+  display: flex;
+  align-items: end;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.homepage-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.homepage-btn-start {
+  all: unset;
+  font-size: var(--font-size-bigger);
+  background-image: url(../public/04_sipka-hrát.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+
+}
+
+.homepage-btn-rules {
+  all: unset;
+  font-size: var(--font-size-bigger);
+  background-image: url(/assets/05_sipka-pravidla.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
 }
 
 
 
-/* Pozadí */
+
+/* Pozadí Janča*/
 img {
   object-fit: cover;
   position: absolute;
