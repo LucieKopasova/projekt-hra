@@ -61,7 +61,11 @@ html {
   right: 0rem;
   bottom: 1rem;
   z-index: 998;
-  flex: 1 0 auto;
+  
+}
+
+.gameLevel-arrow-position {
+flex: 1 0 auto;
 }
 
 /* 0. Icony (Lucka) */
@@ -173,6 +177,45 @@ html {
 }
 
 .rulesPage-text {
+  flex: 2 1 auto;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* 3. Příběh */
+
+.storyPage-content {
+  background-image: url(./assets/203_pravidla.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+.storyPage-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30rem;
+  height: 38rem;
+  background-color: var(--color-background_title-opacity);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+.storyPage-title {
+  flex: 0 1 auto;
+  font-size: var(--font-size-titles);
+  height: auto;
+}
+
+.storyPage-text {
   flex: 2 1 auto;
 }
 
