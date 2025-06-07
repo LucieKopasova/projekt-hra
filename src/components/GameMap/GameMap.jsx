@@ -1,13 +1,16 @@
 import './GameMap.css';
 import gameData from '../../data/gameData.json';
 
-export const GameMap = () => {
+export const GameMap = ({onMapClick}) => {
   return (
     <>
     
-    <img src={gameData[0].mapImage}/>
+    <img src="/assets/106_mapa_chata.png"/>
    
-    <button className="continue-btn continue-btn--map">Pokračovat</button>
+    <button 
+    className="arrow"
+    onClick={onMapClick}
+    >Pokračovat</button>
     
      </>
   )

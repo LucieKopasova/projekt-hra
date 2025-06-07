@@ -26,15 +26,19 @@
 
 
 
-*,
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 #app,
-.container {
-  height: 100%;
+.container,
+.homepage-content,
+.page-wrapper {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 
@@ -237,7 +241,6 @@ img {
     ". game game game game game ."
     "footer footer footer footer footer footer footer";
   width: 100vw;
-  min-height: 100%;
   position: relative;
 }
 

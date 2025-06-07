@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { GameBlocker } from '../GameBlocker/GameBlocker';
 
 
-export const GameLevel = ({onCalculation}) => {
+export const GameLevel = ({onCalculation, onGameLevelClick}) => {
 
   const [resultTarget, setResultTarget] = useState('0');
   const [blockerTarget, setBlockerTarget] = useState('10')
@@ -30,7 +30,6 @@ console.log(blockerTarget)
 
         <GameshufflerResult resultTarget={resultTarget}/>
         
-        {/* <div className="result-blocker">{blockerTarget}</div> */}
         <GameBlocker blockerTarget={blockerTarget}/>
 
         <Gameschuffler onExams={handleClick}/>
@@ -38,7 +37,7 @@ console.log(blockerTarget)
 
         </div>
 
-        <GameLevelFooter />
+        <GameLevelFooter onGameLevelClick={onGameLevelClick} />
 
       </>
       )

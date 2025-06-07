@@ -59,10 +59,10 @@ export const Gameschuffler = ({ onExams }) => {
         
 
         {shuffledResults.map((result) => (
-          <div> 
+          <div key={result.examplesValue}> 
             <button
               className="example-button"
-              key={result.idExamples}
+              
               onClick={() => {
                 play();
                 onExams(result.examplesValue);
