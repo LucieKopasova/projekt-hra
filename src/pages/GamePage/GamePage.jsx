@@ -13,7 +13,7 @@ export const GamePage = () => {
           
         }
       
-console.log(energy)
+
 
   return (
     <div className="page-wrapper">

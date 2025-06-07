@@ -5,18 +5,22 @@ import { Gameschuffler } from '../GameSchuffler/GameSchuffler';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
 import { useState } from 'react';
+import { GameBlocker } from '../GameBlocker/GameBlocker';
 
 
 export const GameLevel = ({onCalculation}) => {
 
   const [resultTarget, setResultTarget] = useState('0');
+  const [blockerTarget, setBlockerTarget] = useState('10')
 
   const handleClick = (exampleValue) => {
     setResultTarget(exampleValue);
-    console.log(exampleValue)
     onCalculation(exampleValue)
-  };
 
+    setBlockerTarget((oldBlockerTarget) => oldBlockerTarget - Number(exampleValue))
+    
+  };
+console.log(blockerTarget)
   return (
     <>
 
@@ -26,7 +30,8 @@ export const GameLevel = ({onCalculation}) => {
 
         <GameshufflerResult resultTarget={resultTarget}/>
         
-        <div className="result-blocker">5</div>
+        {/* <div className="result-blocker">{blockerTarget}</div> */}
+        <GameBlocker blockerTarget={blockerTarget}/>
 
         <Gameschuffler onExams={handleClick}/>
         <section className="blocker"></section>
