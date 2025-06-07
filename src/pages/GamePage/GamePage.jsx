@@ -25,7 +25,9 @@ export const GamePage = () => {
 
 
 
-      <GameContainer onCalculation={handleCalcualiton}/>
+      <GameContainer 
+      onCalculation={handleCalcualiton}
+      energy={energy}/>
 
 
 

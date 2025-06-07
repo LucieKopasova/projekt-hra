@@ -5,7 +5,7 @@ import { HappyEnd } from '../HappyEnd/HappyEnd';
 import { useState } from 'react';
 import gameData from '../../data/gameData.json'
 
-export const GameContainer = ({ onCalculation }) => {
+export const GameContainer = ({ onCalculation, energy }) => {
 
   const [componentNumber, setComponentNumber] = useState(1)
  
@@ -28,7 +28,9 @@ export const GameContainer = ({ onCalculation }) => {
   }
 
   const swithComponent = () => {
-    if (componentNumber === 1) {
+    if (energy < 0) {
+      return <BadEnd /> 
+    } else if (componentNumber === 1) {
       return <GameMap 
       onMapClick={handleMapClick} 
       initMapBackground={gameDataObject.mapImage}
@@ -42,9 +44,8 @@ export const GameContainer = ({ onCalculation }) => {
       />
     } else if (componentNumber === 3) {
       return <HappyEnd />
-    } else if (componentNumber === 4) {
-      return <BadEnd />
-    }
+    }  
+    
 
 
   }
