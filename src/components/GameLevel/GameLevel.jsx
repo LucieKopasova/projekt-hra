@@ -4,14 +4,14 @@ import gameData from '../../data/gameData.json';
 import { Gameschuffler } from '../GameSchuffler/GameSchuffler';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { GameBlocker } from '../GameBlocker/GameBlocker';
 
 
-export const GameLevel = ({onCalculation, onGameLevelClick}) => {
+export const GameLevel = ({onCalculation, onGameLevelClick, initBlockerTarget, initBlockerBackground}) => {
 
   const [resultTarget, setResultTarget] = useState('0');
-  const [blockerTarget, setBlockerTarget] = useState('10')
+  const [blockerTarget, setBlockerTarget] = useState(initBlockerTarget);
 
   const handleClick = (exampleValue) => {
     setResultTarget(exampleValue);
@@ -20,11 +20,12 @@ export const GameLevel = ({onCalculation, onGameLevelClick}) => {
     setBlockerTarget((oldBlockerTarget) => oldBlockerTarget - Number(exampleValue))
     
   };
-console.log(blockerTarget)
+
+  
   return (
     <>
 
-      <img src={gameData[0].actionImage} />
+      <img src={initBlockerBackground} />
 
       <div className="gamelevel-game">
 

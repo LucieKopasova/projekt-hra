@@ -1,11 +1,12 @@
 import './GameMap.css';
 import gameData from '../../data/gameData.json';
 
-export const GameMap = ({onMapClick}) => {
+export const GameMap = ({onMapClick, initMapBackground}) => {
+
   return (
     <>
     
-    <img src="/assets/106_mapa_chata.png"/>
+    <img src={initMapBackground}/>
    
     <button 
     className="arrow"
