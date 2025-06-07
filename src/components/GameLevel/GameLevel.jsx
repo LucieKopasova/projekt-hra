@@ -6,11 +6,12 @@ import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
 import { useEffect, useState } from 'react';
 import { GameBlocker } from '../GameBlocker/GameBlocker';
+import { text } from 'framer-motion/client';
 
 
-export const GameLevel = ({onCalculation, onGameLevelClick, initBlockerTarget, initBlockerBackground}) => {
+export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, initBlockerBackground, gameDataObject }) => {
 
-  const [resultTarget, setResultTarget] = useState('0');
+  const [resultTarget, setResultTarget] = useState(0);
   const [blockerTarget, setBlockerTarget] = useState(initBlockerTarget);
 
   const handleClick = (exampleValue) => {
@@ -18,10 +19,26 @@ export const GameLevel = ({onCalculation, onGameLevelClick, initBlockerTarget, i
     onCalculation(exampleValue)
 
     setBlockerTarget((oldBlockerTarget) => oldBlockerTarget - Number(exampleValue))
-    
+
+
+
   };
 
-console.log(blockerTarget)
+   console.log(initBlockerTarget)
+  console.log(resultTarget)
+
+
+  let text ='' 
+  if (resultTarget === 0) {
+    text = ''
+  } else if (resultTarget > initBlockerTarget) {
+    text = 'přehnal jsi to'
+  } else if (resultTarget === initBlockerTarget) {
+    text = 'super'
+  } else {
+    text = 'špatný'
+  }
+
 
   return (
     <>
@@ -30,21 +47,21 @@ console.log(blockerTarget)
 
       <div className="gamelevel-game">
 
-        <GameshufflerResult resultTarget={resultTarget}/>
-        
-        <GameBlocker blockerTarget={blockerTarget}/>
+        <GameshufflerResult resultTarget={resultTarget} />
 
-        <Gameschuffler 
-        onExams={handleClick}
-        initBlockerTarget={initBlockerTarget}
-        blockerTarget={blockerTarget}
+        <GameBlocker blockerTarget={blockerTarget} />
+
+        <Gameschuffler
+          onExams={handleClick}
+          initBlockerTarget={initBlockerTarget}
+          blockerTarget={blockerTarget}
         />
         <section className="blocker"></section>
 
-        </div>
+      </div>
 
-        <GameLevelFooter onGameLevelClick={onGameLevelClick} />
+      <GameLevelFooter text={text} onGameLevelClick={onGameLevelClick} />
 
-      </>
-      )
+    </>
+  )
 };

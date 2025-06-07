@@ -6,7 +6,6 @@ import { HomePage } from './pages/HomePage/HomePage';
 import { RulesPage } from './pages/RulesPage/RulesPage';
 import { StoryPage } from './pages/StoryPage/StoryPage';
 import { GamePage } from './pages/GamePage/GamePage';
-import { DevPage } from './pages/DevPage/DevPage';
 
 
 
@@ -31,10 +30,6 @@ const router = createBrowserRouter([
       {
         path: 'hra',
         element: <GamePage />,
-      },
-      {
-        path: 'devpage',
-        element: <DevPage />,
       }
     ]
   }

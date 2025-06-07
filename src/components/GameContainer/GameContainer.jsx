@@ -43,6 +43,7 @@ export const GameContainer = ({ onCalculation, energy }) => {
         onGameLevelClick={handleGameLevelClick}
         initBlockerTarget={gameDataObject.target}
         initBlockerBackground={gameDataObject.actionImage}
+        gameDataObject={gameDataObject}
       />
     } 
     
