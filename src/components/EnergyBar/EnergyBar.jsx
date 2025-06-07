@@ -1,7 +1,10 @@
-export const EnergyBar = () => {
+
+export const EnergyBar = ({energy}) => {
+  
+  
   return (
     <header className="header">
-      <div className="score">100</div>
+      <div className="score">{energy}</div>
       
     </header>
   )

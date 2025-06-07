@@ -7,13 +7,14 @@ import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
 import { useState } from 'react';
 
 
-export const GameLevel = () => {
+export const GameLevel = ({onCalculation}) => {
 
   const [resultTarget, setResultTarget] = useState('0');
 
-  const handleClick = (id) => {
-    setResultTarget(id);
-    console.log(id)
+  const handleClick = (exampleValue) => {
+    setResultTarget(exampleValue);
+    console.log(exampleValue)
+    onCalculation(exampleValue)
   };
 
   return (

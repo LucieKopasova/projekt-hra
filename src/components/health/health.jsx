@@ -5,13 +5,13 @@ import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
 import { GameMap } from '../GameMap/GameMap';
 
 export const HealthBar = () => {
-  const [health, sethealth] = useState('100');
-  /* const [resultTarget, setresultTarget] = useState('0');
+  const [energy, setEnergy] = useState('100');
 
-  const handleClick = (id) => {
-    setresultTarget(id);
-    sethealth((currentHealth) => currentHealth - Number(id));
-  }; */
+    const handleClick = (id) => {
+      setEnergy((currentEnergy) => {
+        setEnergy(currentEnergy) - Number(id)
+      })
+    }
 
   const contentGame = () => {
     if (health < 60) {
@@ -29,8 +29,7 @@ export const HealthBar = () => {
         <div className="header">
           <div className="score" >{health}</div>
         </div>
-        <GameshufflerResult resultTarget={resultTarget} />
-        {/* <Exams onExams={handleClick} /> */}
+       
       </>
     );
   };

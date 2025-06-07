@@ -12,20 +12,20 @@ const randomPropertyKey = Math.floor(Math.random() * 3) + 1;
 
 //správný výsledek  jako je  překážka
 const getCorrectResult = () => {
-  const object = examples.find((obj) => obj.idExamples === blocker);
+  const object = examples.find((obj) => obj.examplesValue === blocker);
   return {
     text: object[randomPropertyKey],
-    idExamples: object.idExamples,
+    examplesValue: object.examplesValue,
   };
 };
 //menší vysledek než je překážka ale větší než je nula
 
 const getLowerResult = () => {
   const smallerthenBlocker = Math.ceil(Math.random() * (blocker - 1));
-  const object = examples.find((obj) => obj.idExamples === smallerthenBlocker);
+  const object = examples.find((obj) => obj.examplesValue === smallerthenBlocker);
   return {
     text: object[randomPropertyKey],
-    idExamples: object.idExamples,
+    examplesValue: object.examplesValue,
   };
 };
 
@@ -34,10 +34,10 @@ const getLowerResult = () => {
 const getHigherResult = () => {
   const higherthenBlocker =
     Math.floor(Math.random() * (examples.length - blocker)) + blocker + 1;
-  const object = examples.find((obj) => obj.idExamples === higherthenBlocker);
+  const object = examples.find((obj) => obj.examplesValue === higherthenBlocker);
   return {
     text: object[randomPropertyKey],
-    idExamples: object.idExamples,
+    examplesValue: object.examplesValue,
   };
 };
 
@@ -54,22 +54,18 @@ export const Gameschuffler = ({ onExams }) => {
   const [play] = useSound(soundclik);
 
   return (
-   /*  <div className="gamelevel-game">
-
-    <div className="result-exams">3</div>
-     <div className="result-blocker">{blocker}</div> */
 
       <div className="examples">
         
 
-        {shuffledResults.map((result, index) => (
-          <div>
+        {shuffledResults.map((result) => (
+          <div> 
             <button
               className="example-button"
               key={result.idExamples}
               onClick={() => {
                 play();
-                onExams(result.idExamples);
+                onExams(result.examplesValue);
               }}
             >
               {result.text}
@@ -77,9 +73,8 @@ export const Gameschuffler = ({ onExams }) => {
           
           </div>
         ))}
-      {/*   <section className="blocker"></section> */}
       </div>
       
-    /* </div> */
+    
   );
 };
