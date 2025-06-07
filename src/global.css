@@ -66,11 +66,13 @@ html {
   bottom: 1rem;
   z-index: 998;
   position: fixed;
+  color: var(--color-text_border);
+
 
 }
 
 .gameLevel-arrow-position {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   position: static;
 }
 
@@ -369,7 +371,7 @@ příklady */
   display: flex;
   align-items: center;
   justify-content: center;
-
+  color: var(--color-text_border);
   border: var(--border);
   border-radius: var(--border-radius);
   background-color: var(--color-background_title);
