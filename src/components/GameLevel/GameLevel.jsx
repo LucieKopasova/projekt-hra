@@ -1,8 +1,9 @@
 
 import '/global.css';
 import gameData from '../../data/gameData.json';
-import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { Gameschuffler } from '../GameSchuffler/GameSchuffler';
+import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
+
 
 export const GameLevel = () => {
   return (
@@ -11,6 +12,7 @@ export const GameLevel = () => {
       <img src={gameData[0].actionImage} />
 
       <Gameschuffler/>
+
 
     <GameLevelFooter/>
     
