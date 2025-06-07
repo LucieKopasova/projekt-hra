@@ -1,5 +1,6 @@
 import { HealthBar } from "../../components/health/health";
 import { HomeIcon } from "../../components/HomeIcon/HomeIcon";
+
 import { SoundOffIcon } from "../../components/SoundOffIcon/SoundOffIcon";
 import { SoundOnIcon } from "../../components/SoundOnIcon/SoundOnIcon";
 import { Soundtrack } from "../../components/soundtrack.jsx/soundtrack";
@@ -13,12 +14,13 @@ export const DevPage = () => {
         <h1>Výprava Batoně</h1>
       </header>
       <main>
-        <HomeIcon/>
+       {/*  <HomeIcon/>
         <SoundOffIcon/>
         <SoundOnIcon/>
         
         <HealthBar />
-        <TypewriterText />
+        <TypewriterText /> */}
+     
       </main>
       <footer></footer>
     </div>

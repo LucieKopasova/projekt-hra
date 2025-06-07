@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './health.css';
-import { Exams } from '../shuffler/shuffler';
+
 import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
 import { GameMap } from '../GameMap/GameMap';
 
@@ -30,7 +30,7 @@ export const HealthBar = () => {
           <h2>{health}</h2>
         </div>
         <GameshufflerResult resultTarget={resultTarget} />
-        <Exams onExams={handleClick} />
+        {/* <Exams onExams={handleClick} /> */}
       </>
     );
   };

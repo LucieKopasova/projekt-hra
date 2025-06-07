@@ -1,4 +1,4 @@
-import './shuffler.css';
+
 import examples from '../../data/examples.json';
 import useSound from 'use-sound';
 import soundclik from '../../sounds/mouse-click.mp3';
@@ -14,7 +14,7 @@ const randomPropertyKey = Math.floor(Math.random() * 3) + 1;
 const getCorrectResult = () => {
   const object = examples.find((obj) => obj.idExamples === blocker);
   return {
-    text: `Spravný výsledek: ${object[randomPropertyKey]}`,
+    text: object[randomPropertyKey],
     idExamples: object.idExamples,
   };
 };
@@ -24,7 +24,7 @@ const getLowerResult = () => {
   const smallerthenBlocker = Math.ceil(Math.random() * (blocker - 1));
   const object = examples.find((obj) => obj.idExamples === smallerthenBlocker);
   return {
-    text: `Nizká hodnota: ${object[randomPropertyKey]}`,
+    text: object[randomPropertyKey],
     idExamples: object.idExamples,
   };
 };
@@ -36,7 +36,7 @@ const getHigherResult = () => {
     Math.floor(Math.random() * (examples.length - blocker)) + blocker + 1;
   const object = examples.find((obj) => obj.idExamples === higherthenBlocker);
   return {
-    text: `Vysoká hodnota: ${object[randomPropertyKey]}`,
+    text: object[randomPropertyKey],
     idExamples: object.idExamples,
   };
 };
@@ -50,19 +50,22 @@ const shuffleArray = (array) => {
 };
 const shuffledResults = shuffleArray(resultArray);
 
-export const Exams = ({ onExams }) => {
+export const Gameschuffler = ({ onExams }) => {
   const [play] = useSound(soundclik);
 
   return (
-    <div className="container">
-      <br />
-      <div className="Exams">
-        <h2>Příklad</h2>
+    <div className="gamelevel-game">
+
+    <div className="result-exams">3</div>
+     <div className="result-blocker">{blocker}</div>
+
+      <div className="examples">
+        
 
         {shuffledResults.map((result, index) => (
           <div>
             <button
-              className="button--result"
+              className="example-button"
               key={result.idExamples}
               onClick={() => {
                 play();
@@ -71,14 +74,12 @@ export const Exams = ({ onExams }) => {
             >
               {result.text}
             </button>
-            <br />
+          
           </div>
         ))}
+        <section className="blocker"></section>
       </div>
-      <div className="Blocker">
-        <h2>Obrázek</h2>
-        <p>{blocker}</p>
-      </div>
+      
     </div>
   );
 };
