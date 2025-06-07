@@ -6,12 +6,12 @@ import { GameMap } from '../GameMap/GameMap';
 
 export const HealthBar = () => {
   const [health, sethealth] = useState('100');
-  const [resultTarget, setresultTarget] = useState('0');
+  /* const [resultTarget, setresultTarget] = useState('0');
 
   const handleClick = (id) => {
     setresultTarget(id);
     sethealth((currentHealth) => currentHealth - Number(id));
-  };
+  }; */
 
   const contentGame = () => {
     if (health < 60) {
