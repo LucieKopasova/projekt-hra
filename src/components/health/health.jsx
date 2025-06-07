@@ -26,8 +26,8 @@ export const HealthBar = () => {
     }
     return (
       <>
-        <div className="healthBar">
-          <h2>{health}</h2>
+        <div className="header">
+          <div className="score" >{health}</div>
         </div>
         <GameshufflerResult resultTarget={resultTarget} />
         {/* <Exams onExams={handleClick} /> */}

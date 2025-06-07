@@ -54,10 +54,10 @@ export const Gameschuffler = ({ onExams }) => {
   const [play] = useSound(soundclik);
 
   return (
-    <div className="gamelevel-game">
+   /*  <div className="gamelevel-game">
 
     <div className="result-exams">3</div>
-     <div className="result-blocker">{blocker}</div>
+     <div className="result-blocker">{blocker}</div> */
 
       <div className="examples">
         
@@ -77,9 +77,9 @@ export const Gameschuffler = ({ onExams }) => {
           
           </div>
         ))}
-        <section className="blocker"></section>
+      {/*   <section className="blocker"></section> */}
       </div>
       
-    </div>
+    /* </div> */
   );
 };

@@ -11,11 +11,18 @@ export const GameLevel = () => {
 
       <img src={gameData[0].actionImage} />
 
-      <Gameschuffler/>
+      <div className="gamelevel-game">
 
+        <div className="result-exams">3</div>
+        <div className="result-blocker">5</div>
 
-    <GameLevelFooter/>
-    
-     </>
-  )
+        <Gameschuffler />
+        <section className="blocker"></section>
+
+        </div>
+
+        <GameLevelFooter />
+
+      </>
+      )
 };
