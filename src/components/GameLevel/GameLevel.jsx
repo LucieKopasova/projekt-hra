@@ -4,7 +4,7 @@ import gameData from '../../data/gameData.json';
 import { Gameschuffler } from '../GameSchuffler/GameSchuffler';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { GameBlocker } from '../GameBlocker/GameBlocker';
 import { text } from 'framer-motion/client';
 
@@ -30,13 +30,13 @@ export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, 
 
   let text ='' 
   if (resultTarget === 0) {
-    text = ''
+    text = gameDataObject.story
   } else if (resultTarget > initBlockerTarget) {
-    text = 'přehnal jsi to'
+    text = gameDataObject.fail
   } else if (resultTarget === initBlockerTarget) {
-    text = 'super'
+    text = gameDataObject.success
   } else {
-    text = 'špatný'
+    text = gameDataObject.again
   }
 
 
