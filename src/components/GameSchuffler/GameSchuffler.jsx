@@ -3,8 +3,17 @@ import examples from '../../data/examples.json';
 import useSound from 'use-sound';
 import soundclik from '../../sounds/mouse-click.mp3';
 
+
+export const Gameschuffler = ({ onExams, blockerTarget, initBlockerTarget }) => {
+
+  const [play] = useSound(soundclik);
+
+
+  
+
 // hodnota přkážky
-const blocker = 3;
+const blocker = initBlockerTarget;
+const  currentBlockerResult = blockerTarget;
 
 //nahodný výber příkladu z pole
 
@@ -50,8 +59,11 @@ const shuffleArray = (array) => {
 };
 const shuffledResults = shuffleArray(resultArray);
 
-export const Gameschuffler = ({ onExams }) => {
-  const [play] = useSound(soundclik);
+console.log('shuffler' + blocker)
+//RETURN --------------------------
+//---------------------------------
+
+
 
   return (
 
@@ -62,11 +74,11 @@ export const Gameschuffler = ({ onExams }) => {
           <div key={result.examplesValue}> 
             <button
               className="example-button"
-              
               onClick={() => {
                 play();
                 onExams(result.examplesValue);
               }}
+               disabled={currentBlockerResult <= 0} 
             >
               {result.text}
             </button>

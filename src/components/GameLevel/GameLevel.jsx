@@ -21,7 +21,8 @@ export const GameLevel = ({onCalculation, onGameLevelClick, initBlockerTarget, i
     
   };
 
-  
+console.log(blockerTarget)
+
   return (
     <>
 
@@ -33,7 +34,11 @@ export const GameLevel = ({onCalculation, onGameLevelClick, initBlockerTarget, i
         
         <GameBlocker blockerTarget={blockerTarget}/>
 
-        <Gameschuffler onExams={handleClick}/>
+        <Gameschuffler 
+        onExams={handleClick}
+        initBlockerTarget={initBlockerTarget}
+        blockerTarget={blockerTarget}
+        />
         <section className="blocker"></section>
 
         </div>
