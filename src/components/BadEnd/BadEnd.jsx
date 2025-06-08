@@ -10,18 +10,13 @@ export const BadEnd = () => {
       <img src="/images/302_prohra.png" />
 
       <footer className="gameLevel-footer">
-                  <div className='story-container'>
-                  
-                      <TypewriterText text="Batoň se snažil, ale tentokrát mu síly došly těsně před cílem. Nevadí! Příště to určitě zvládne líp. Jsi připravený zkusit to znovu?"/>
-                  
-                  </div>
-                  <Link 
-                  to="/"
-                  className="arrow"
-                  > Hrát znovu
-                  </Link>
-              </footer>
-              </>
-
+        <div className="story-container">
+          <TypewriterText text="Batoň se snažil, ale tentokrát mu síly došly těsně před cílem. Nevadí! Příště to určitě zvládne líp. Jsi připravený zkusit to znovu?" />
+        </div>
+        <Link to="/" className="arrow arrow-position arrow-link">
+          <span>Hrát znovu</span>
+        </Link>
+      </footer>
+    </>
   );
 };

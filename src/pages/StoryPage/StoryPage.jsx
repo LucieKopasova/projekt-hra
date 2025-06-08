@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import "./StoryPage.css";
+import './StoryPage.css';
 
 export const StoryPage = () => {
   return (
@@ -17,8 +17,8 @@ export const StoryPage = () => {
           </p>
         </div>
       </section>
-      <Link to="/hra" className="arrow">
-        Pokračovat
+      <Link to="/hra" className="arrow arrow-link">
+        <span> Pokračovat</span>
       </Link>
     </div>
   );
