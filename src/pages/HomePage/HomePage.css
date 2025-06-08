@@ -38,7 +38,11 @@
   background-size: contain;
   background-position: center;
   cursor: pointer;
+  margin-left: 50px;
+}
 
+.homepage-btn-start span {
+  margin-right: 30px;
 }
 
 .homepage-btn-rules {
@@ -49,4 +53,18 @@
   background-size: contain;
   background-position: center;
   cursor: pointer;
+  margin-right: 50px;
+}
+
+.homepage-btn-rules span {
+  margin-left: 30px;
+}
+
+.homepage-btn-rules:hover,
+.homepage-btn-start:hover,
+.homepage-btn-rules:focus,
+.homepage-btn-start:focus {
+  cursor: pointer;
+  color: #45391f;
+  ;
 }

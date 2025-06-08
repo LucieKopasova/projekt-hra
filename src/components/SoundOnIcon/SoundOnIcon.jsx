@@ -22,20 +22,20 @@ export const SoundOnIcon = () => {
         <path
           d="M40 26C42.6667 28.6667 42.6667 35.3333 40 38"
           stroke="#3B2600"
-          stroke-width="4"
-          stroke-linecap="round"
+          strokeWidth="4"
+          strokeLinecap="round"
         />
         <path
           d="M46 22C49.3333 26 49.3333 38 46 42"
           stroke="#3B2600"
-          stroke-width="4"
-          stroke-linecap="round"
+          strokeWidth="4"
+          strokeLinecap="round"
         />
         <path
           d="M52 18C56 24 56 40 52 46"
           stroke="#3B2600"
-          stroke-width="4"
-          stroke-linecap="round"
+          strokeWidth="4"
+          strokeLinecap="round"
         />
       </svg>
     </div>

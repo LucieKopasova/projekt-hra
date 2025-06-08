@@ -26,8 +26,8 @@ export const SoundOffIcon = () => {
           x2="52"
           y2="44"
           stroke="#3B2600"
-          stroke-width="4"
-          stroke-linecap="round"
+          strokeWidth="4"
+          strokeLinecap="round"
         />
         <line
           x1="52"
@@ -35,8 +35,8 @@ export const SoundOffIcon = () => {
           x2="40"
           y2="44"
           stroke="#3B2600"
-          stroke-width="4"
-          stroke-linecap="round"
+          strokeWidth="4"
+          strokeLinecap="round"
         />
       </svg>
     </div>
