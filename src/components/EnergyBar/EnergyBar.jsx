@@ -1,3 +1,4 @@
+import './EnergyBar.css';
 
 export const EnergyBar = ({energy}) => {
   

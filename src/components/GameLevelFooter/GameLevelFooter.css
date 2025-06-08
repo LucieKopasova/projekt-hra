@@ -1,0 +1,31 @@
+/* text s příběhem */
+
+.gameLevel-footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*   gap: 5rem; */
+  background-color: rgb(239, 214, 160, 0.8);
+}
+
+/* Story wrapper */
+
+.story-container {
+  display: flex;
+  align-items: center;
+  min-height: 130px;
+  padding: 2rem;
+  font-size: var(--font-size-normal);
+}
+
+/* tlačítko - šipka */
+
+.gameLevel-arrow-position {
+  flex: 0 0 auto;
+  position: static;
+}
+
+.gameLevel-arrow-off {
+  display: none;
+}

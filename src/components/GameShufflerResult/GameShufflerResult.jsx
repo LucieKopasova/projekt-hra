@@ -7,7 +7,7 @@ export const GameshufflerResult = ({ resultTarget }) => {
   return (
     <>
       <div className="result-exams">
-        <p>{resultCount}</p>
+        <p>{resultTarget === 0 ? '?' : resultCount}</p>
       </div>
     </>
   );

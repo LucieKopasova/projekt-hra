@@ -1,5 +1,6 @@
 
 import '/global.css';
+import './GameLevel.css';
 import gameData from '../../data/gameData.json';
 import { Gameschuffler } from '../GameSchuffler/GameSchuffler';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
@@ -59,7 +60,11 @@ export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, 
 
       </div>
 
-      <GameLevelFooter text={text} onGameLevelClick={onGameLevelClick} />
+      <GameLevelFooter 
+      text={text} 
+      onGameLevelClick={onGameLevelClick}
+      blockerTarget = {blockerTarget}
+      />
 
     </>
   )
