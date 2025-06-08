@@ -42,11 +42,6 @@
   background: linear-gradient(to bottom, rgb(230, 210, 150), #b9934c);
 }
 
-.icon-soundSwitch:focus div,
-.icon-homeButton:focus div,
-.icon-soundSwitch:hover div,
-.icon-homeButton:hover div {}
-
 
 /* šipka pokračovat */
 
@@ -67,6 +62,12 @@
   position: fixed;
   color: var(--color-text_border);
   cursor: pointer;
+  transition: transform 0.2s ease-in-out
+}
+
+.arrow:hover,
+.arrow:focus {
+  transform: scale(1.05);
 }
 
 .arrow span {
