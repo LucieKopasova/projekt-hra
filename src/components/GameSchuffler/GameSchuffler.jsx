@@ -1,6 +1,7 @@
 import examples from '../../data/examples.json';
 import useSound from 'use-sound';
 import soundclik from '../../sounds/mouse-click.mp3';
+import { getSoundOn } from '../../pages/App/App';
 
 export const Gameschuffler = ({
   onExams,
@@ -10,7 +11,7 @@ export const Gameschuffler = ({
   const [play] = useSound(soundclik);
 
   // hodnota přkážky
-  const blocker = initBlockerTarget;
+  const blocker = 3; /* initBlockerTarget; */
   const currentBlockerResult = blockerTarget;
 
   //nahodný výber příkladu z pole
@@ -72,7 +73,9 @@ export const Gameschuffler = ({
           <button
             className="example-button"
             onClick={() => {
-              play();
+              if (getSoundOn()) {
+                play();
+              }
               onExams(result.examplesValue);
             }}
             disabled={currentBlockerResult <= 0}

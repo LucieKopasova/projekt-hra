@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+/* import React, { useState, useEffect } from 'react';
 import useSound from 'use-sound';
 import soundtrackSong from '../../sounds/soundForest.mp3';
 import './soundtrack.css';
@@ -8,16 +8,16 @@ export const Soundtrack = () => {
   const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
-    play();
-    /* const handleMusicClick = () => {
+    play(); */
+/* const handleMusicClick = () => {
     
      setIsPlaying(true);
       document.removeEventListener('click', handleMusicClick);
     };
-    document.addEventListener('click', handleMusicClick); */
-  }, []);
+    document.addEventListener('click', handleMusicClick); 
+  }, []); */
 
-  const toggleSound = () => {
+/*   const toggleSound = () => {
     if (isPlaying === true) {
       stop();
     } else {
@@ -32,3 +32,4 @@ export const Soundtrack = () => {
     </button>
   );
 };
+ */
