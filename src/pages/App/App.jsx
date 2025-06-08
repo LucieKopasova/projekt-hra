@@ -18,6 +18,7 @@ export const App = () => {
   const [play, { stop }] = useSound(soundtrackSong, { volume: 0.5 });
   const [isPlaying, setIsPlaying] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(getSoundOn());
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   const toggleSound = () => {
     const newState = !soundEnabled;
@@ -32,8 +33,16 @@ export const App = () => {
       setIsPlaying(false);
     }
   };
+
+  const handleFirstClick = () => {
+    if (!hasInteracted && soundEnabled && !isPlaying) {
+      play();
+      setIsPlaying(true);
+      setHasInteracted(true);
+    }
+  };
   return (
-    <div className="container">
+    <div className="container" onClick={handleFirstClick}>
       <div className="app-icons">
         <button onClick={toggleSound} className="icon-soundSwitch">
           {isPlaying ? <SoundOnIcon /> : <SoundOffIcon />}
