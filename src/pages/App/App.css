@@ -14,6 +14,7 @@
   border: none;
   width: 56px;
   height: 56px;
+  cursor: pointer;
 }
 
 .icon-homeButton {
@@ -21,12 +22,14 @@
   border: none;
   width: 56px;
   height: 56px;
+  cursor: pointer;
 }
 
 
 /* šipka pokračovat */
 
 .arrow {
+  font-family: inherit;
   background-color: transparent;
   border: none;
   background-image: url(/icon/06_sipka-pokracovat_hrat-znovu.png);
@@ -41,8 +44,34 @@
   z-index: 998;
   position: fixed;
   color: var(--color-text_border);
+  cursor: pointer;
+}
+
+.arrow span {
+  margin-bottom: 10px;
+}
+
+.arrow-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 
 }
 
 
+a {
+  all: unset;
+  text-decoration: none;
+}
+
+/* tlačítko - šipka */
+
+.arrow-position {
+  flex: 0 0 auto;
+  position: static;
+}
+
+.gameLevel-arrow-off {
+  display: none;
+}

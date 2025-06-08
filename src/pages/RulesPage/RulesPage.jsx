@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import "./RulesPage.css";
+import './RulesPage.css';
 
 export const RulesPage = () => {
   return (
@@ -19,7 +19,7 @@ export const RulesPage = () => {
         </p>
       </section>
       <Link to="/hra" className="arrow">
-        Pokračovat
+        <span> Pokračovat</span>
       </Link>
     </div>
   );

@@ -9,18 +9,17 @@ export const HappyEnd = () => {
     <>
       <img src={gameData[10].actionImage} />
 
-         <footer className="gameLevel-footer">
-                  <div className='story-container'>
-                  
-                      <TypewriterText text="Hurá! Batoň dorazil až do cíle. Celou cestu šetřil síly, překonal překážky a došel až na konec. Bez tebe by to nezvládl. Skvělá práce!"/>
-                  
-                  </div>
-                  <Link 
-                  to="/"
-                  className="arrow"
-                  > Hrát znovu
-                  </Link>
-              </footer>
-              </>
+      <footer className="gameLevel-footer">
+        <div className="story-container">
+          <TypewriterText text="Hurá! Batoň dorazil až do cíle. Celou cestu šetřil síly, překonal překážky a došel až na konec. Bez tebe by to nezvládl. Skvělá práce!" />
+        </div>
+        <div>
+          <Link to="/" className="arrow arrow-position arrow-link">
+            {' '}
+            <span> Hrát znovu </span>
+          </Link>
+        </div>
+      </footer>
+    </>
   );
 };
