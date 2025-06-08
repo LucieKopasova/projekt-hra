@@ -7,8 +7,8 @@
     "success": "Vyšlapal to s přehledem, paráda!",
     "fail": "Uf, uf… hned na začátku to trochu přehnal a zadýchal se.",
     "again": "Batoň se rozběhl, ale v půlce kopce mu došly síly. Musí mu trochu přidat.",
-    "mapImage": "/assets/101_mapa_start.png",
-    "actionImage": "/assets/101_start.png"
+    "mapImage": "/images/101_mapa_start.png",
+    "actionImage": "/images/101_start.png"
   },
   {
     "id": 102,
@@ -18,8 +18,8 @@
     "success": "Přehoupl se přes ni jako nic.",
     "fail": "Batoh se mu zachytil o větev. Chvíli zápasil, než ho uvolnil a toho stálo více energie.",
     "again": "Zkusil přeskočit, ale potřebuje víc síly.",
-    "mapImage": "/assets/102_mapa_klada.png",
-    "actionImage": "/assets/102_klada.png"
+    "mapImage": "/images/102_mapa_klada.png",
+    "actionImage": "/images/102_klada.png"
   },
   {
     "id": 103,
@@ -29,8 +29,8 @@
     "success": "Zachumlal se do spacáku, zásoby schoval a noc přežil jako král.",
     "fail": "Zapomněl si schovat batoh a drzá liška mu odnesla část zásob. Vystačí mu energie až do cíle?",
     "again": "Nestihl si schovat batoh a liška se přiblížila! Možná to ještě stihne zachránit.",
-    "mapImage": "/assets/103_mapa_liska.png",
-    "actionImage": "/assets/103_liska.png"
+    "mapImage": "/images/103_mapa_liska.png",
+    "actionImage": "/images/103_liska.png"
   },
   {
     "id": 104,
@@ -40,8 +40,8 @@
     "success": "Zabral a je nahoře, s úsměvem!",
     "fail": "Špatně si rozložil síly, kopec mu dal zabrat. Funí jak lokomotiva!",
     "again": "Už v půlce kopce lapal po dechu. Chce to víc energie.",
-    "mapImage": "/assets/104_mapa_stoupani.png",
-    "actionImage": "/assets/104_stoupani.png"
+    "mapImage": "/images/104_mapa_stoupani.png",
+    "actionImage": "/images/104_stoupani.png"
   },
   {
     "id": 105,
@@ -51,8 +51,8 @@
     "success": "Šel pomalu, soustředěně a přešel až na druhou stranu jako profík!",
     "fail": "Vběhl na visutý most, který se celý rozhoupal, spotřeboval víc síly aby se vůbec na mostě udržel.",
     "again": "Přešel jen kousek, ale musel se otočit zpátky. Ještě jednou, tentokrát s jistotou.",
-    "mapImage": "/assets/105_mapa_most.png",
-    "actionImage": "/assets/105_most.png"
+    "mapImage": "/images/105_mapa_most.png",
+    "actionImage": "/images/105_most.png"
   },
   {
     "id": 106,
@@ -62,8 +62,8 @@
     "success": "Vyspal se v teple, dal si čaj. Ráno je svěží a připravený na poslední výšlap.",
     "fail": "Spal jen chvíli na lavici, ráno je celý rozlámaný.",
     "again": "Zabral si jen kraj lavice a moc si neodpočinul. Potřebuje více energie.",
-    "mapImage": "/assets/106_mapa_chata.png",
-    "actionImage": "/assets/106_chata.png"
+    "mapImage": "/images/106_mapa_chata.png",
+    "actionImage": "/images/106_chata.png"
   },
   {
     "id": 107,
@@ -73,8 +73,8 @@
     "success": "Přeskočil na první dobrou, ponožky zůstaly suché!",
     "fail": "Skočil příliš daleko, šlápl vedle a má mokré ponožky. Brrr! ",
     "again": "Nedošlápl! Skončil zpátky na břehu. Zkus to znova.",
-    "mapImage": "/assets/107_mapa_potok.png",
-    "actionImage": "/assets/107_potok.png"
+    "mapImage": "/images/107_mapa_potok.png",
+    "actionImage": "/images/107_potok.png"
   },
   {
     "id": 108,
@@ -84,8 +84,8 @@
     "success": "Šel opatrně – boty zůstaly čisté a nálada skvělá.",
     "fail": "Šel tak moc opatrně, aby si ani kousek bot nezašpinil, že na tom strávil celé odpoledne.",
     "again": "Udělal pár kroků, ale dál to nešlo. Potřebuje víc sil na celý přechod.",
-    "mapImage": "/assets/108_mapa_blato.png",
-    "actionImage": "/assets/108_blato.png"
+    "mapImage": "/images/108_mapa_blato.png",
+    "actionImage": "/images/108_blato.png"
   },
   {
     "id": 109,
@@ -95,8 +95,8 @@
     "success": "Dobrá volba, má novou sílu do nohou.",
     "fail": "Přejedl se víc, než potřeboval a teď se mu jde těžko dál.",
     "again": "Dal si jen malou svačinu, hlad má pořád. Bude to chtít něco přidat.",
-    "mapImage": "/assets/109_mapa_svacina.png",
-    "actionImage": "/assets/109_svacina.png"
+    "mapImage": "/images/109_mapa_svacina.png",
+    "actionImage": "/images/109_svacina.png"
   },
   {
     "id": 110,
@@ -106,19 +106,19 @@
     "success": "Hotovo! Batoň to zvládl. Celou výpravu ušel vlastními silami! Hurá do cíle!",
     "fail": "Místo rovné cesty si vybral obkliku a nohy ho bolely dvakrát tolik.",
     "again": "Je natolik unavený že neudělá už ani krok zkus ho víc povzbudit.",
-    "mapImage": "/assets/110_mapa_finale.png",
-    "actionImage": "/assets/110_finale.png"
+    "mapImage": "/images/110_mapa_finale.png",
+    "actionImage": "/images/110_finale.png"
   },
   {
     "id": 301,
     "name": "vyhra",
     "story": "Hurá! Batoň dorazil až do cíle. Celou cestu šetřil síly, překonal překážky a došel až na konec. Bez tebe by to nezvládl. Skvělá práce!",
-    "actionImage": "/assets/301_vyhra.png"
+    "actionImage": "/images/301_vyhra.png"
   },
   {
     "id": 302,
     "name": "prohra",
     "story": "Batoň se snažil, ale tentokrát mu síly došly těsně před cílem. Nevadí! Příště to určitě zvládne líp. Jsi připravený zkusit to znovu?",
-    "actionImage": "/assets/302_prohra.png"
+    "actionImage": "/images/302_prohra.png"
   }
 ]

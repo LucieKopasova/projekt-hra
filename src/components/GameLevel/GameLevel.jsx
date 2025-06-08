@@ -21,7 +21,6 @@ export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, 
     setBlockerTarget((oldBlockerTarget) => oldBlockerTarget - Number(exampleValue))
 
 
-
   };
 
    console.log(initBlockerTarget)

@@ -1,16 +1,12 @@
 import Typewriter from 'typewriter-effect';
 
-
-const vzorovyText = 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate asperiores ullam sunt voluptates facilis incidunt nobis, explicabo, aut odio blanditiis dignissimos laudantium omnis, voluptatum expedita!';
-
-
-export const TypewriterText = () => {
+export const TypewriterText = ({text}) => {
 
     return (
         <>
             <Typewriter
                 options={{
-                    strings: vzorovyText,
+                    strings: text,
                     autoStart: true,
                     loop: false,
                     delay: 20,
