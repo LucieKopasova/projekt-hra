@@ -38,9 +38,11 @@ export const App = () => {
         <button onClick={toggleSound} className="icon-soundSwitch">
           {isPlaying ? <SoundOnIcon /> : <SoundOffIcon />}
         </button>
-        <Link to="/" className="icon-homeButton">
-          <HomeIcon />
-        </Link>
+        <div>
+          <Link to="/" className="icon-homeButton">
+            <HomeIcon />
+          </Link>
+        </div>
       </div>
 
       <Outlet />
