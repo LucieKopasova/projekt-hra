@@ -18,3 +18,14 @@
   padding: 2rem;
   font-size: var(--font-size-normal);
 }
+
+/* tlačítko - šipka */
+
+.gameLevel-arrow-position {
+  flex: 0 0 auto;
+  position: static;
+}
+
+.gameLevel-arrow-off {
+  display: none;
+}

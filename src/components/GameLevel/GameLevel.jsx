@@ -60,7 +60,11 @@ export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, 
 
       </div>
 
-      <GameLevelFooter text={text} onGameLevelClick={onGameLevelClick} />
+      <GameLevelFooter 
+      text={text} 
+      onGameLevelClick={onGameLevelClick}
+      blockerTarget = {blockerTarget}
+      />
 
     </>
   )
