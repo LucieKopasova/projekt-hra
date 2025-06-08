@@ -14,6 +14,7 @@ export const GameLevelFooter = ({ onGameLevelClick, text, blockerTarget }) => {
               ? 'arrow arrow-position '
               : 'arrow arrow-position gameLevel-arrow-off'
           }
+
           onClick={onGameLevelClick}
         >
           Pokračovat

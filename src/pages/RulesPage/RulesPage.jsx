@@ -8,7 +8,7 @@ export const RulesPage = () => {
         <h2 className="rulesPage-title">Pravidla</h2>
         <p className="rulesPage-text">
           ​​Batoň se vydal na velkou výpravu! Je plný síly a má spoustu
-          energie,kterou uvidíš v horní části obrazovky. Na každém políčku
+          energie, kterou uvidíš v horní části obrazovky. Na každém políčku
           uvidíš, kolik energie Batoň potřebuje na splnění úkolu (například 5).
           Tvým úkolem je vybrat takový příklad (například 2 + 3), který dává
           správné číslo. Když vybereš správně, Batoň může pokračovat dál. Když

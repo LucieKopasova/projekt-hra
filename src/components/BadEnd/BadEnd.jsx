@@ -3,11 +3,12 @@ import gameData from '../../data/gameData.json';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { TypewriterText } from '../TypewriterText/TypewriterText';
 import { Link } from 'react-router-dom';
+import "./BadEnd.css"
 
 export const BadEnd = () => {
   return (
     <>
-      <img src="/images/302_prohra.png" />
+      <img className="backgroundImage-center" src="/images/302_prohra.png" />
 
       <footer className="gameLevel-footer">
         <div className="story-container">
