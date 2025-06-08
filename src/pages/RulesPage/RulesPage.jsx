@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const RulesPage = () => {
   return (
     <div className="rulesPage-content">
@@ -15,7 +17,9 @@ export const RulesPage = () => {
           dojde až do cíle dřív, než mu dojde energie.
         </p>
       </section>
-      <button className="arrow">Pokračovat</button>
+      <Link to="/hra" className="arrow">
+        Pokračovat
+      </Link>
     </div>
   );
 };

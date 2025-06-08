@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const StoryPage = () => {
   return (
     <div className="storyPage-content">
@@ -14,7 +16,9 @@ export const StoryPage = () => {
           </p>
         </div>
       </section>
-      <button className="arrow">Pokračovat</button>
+      <Link to="/hra" className="arrow">
+        Pokračovat
+      </Link>
     </div>
   );
 };

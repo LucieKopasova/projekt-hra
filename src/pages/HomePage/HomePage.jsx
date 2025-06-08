@@ -1,5 +1,4 @@
-import gameData from '../../data/gameData.json';
-
+import { Link } from 'react-router-dom';
 
 export const HomePage = () => {
   return (
@@ -7,8 +6,12 @@ export const HomePage = () => {
       <h1 className="game-title">Výprava Batoně</h1>
 
       <div className="homepage-buttons">
-        <button className="homepage-btn-start">Hrát</button>
-        <button className="homepage-btn-rules">Pravidla</button>
+        <Link to="/pribeh" className="homepage-btn-start">
+          Hrát
+        </Link>
+        <Link to="/pravidla" className="homepage-btn-rules">
+          Pravidla
+        </Link>
       </div>
     </div>
   );
