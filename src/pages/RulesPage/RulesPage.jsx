@@ -24,7 +24,7 @@ export const RulesPage = () => {
           dojde až do cíle dřív, než mu dojde energie.</p>
         </div>
       </section>
-      <Link to="/hra" className="arrow arrow-link">
+      <Link to="/pribeh" className="arrow arrow-link">
         <span> Pokračovat</span>
       </Link>
     </div>
