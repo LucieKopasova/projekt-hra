@@ -70,6 +70,12 @@ export const Gameschuffler = ({
 
   const [shuffledResults] = useState(initResults);
 
+/* zneaktivnění zvoleného příkladu */
+
+const [disabledButtons, setDisabledButtons] = useState([]);
+
+  const handleExampleClick = (value) => setDisabledButtons((prev) => [...prev, value])
+
   //RETURN --------------------------
   //---------------------------------
 
@@ -84,8 +90,9 @@ export const Gameschuffler = ({
                 play();
               }
               onExams(result.examplesValue);
+              handleExampleClick(result.examplesValue)
             }}
-            disabled={blockerTarget <= 0}
+            disabled={blockerTarget <= 0 || disabledButtons.includes(result.examplesValue) }
           >
             {result.text}
           </button>
