@@ -4,25 +4,34 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding: 3rem 0 2rem 2rem;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-areas:
+    "text .";
 }
 
 .storyPage-text-container {
+  grid-area: text;
+  align-self: center;
+  justify-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  height: fit-content;
+  max-width: 500px;
   background-color: var(--color-background_title-opacity);
-  border-radius: var(--border-radius);
+  border-radius: 30px;
   padding: 2rem;
+  margin: 2rem;
 }
 
 .storyPage-title {
-  flex: 0 1 auto;
   font-size: var(--font-size-titles);
-  height: auto;
+  margin: 0;
+  text-align: center;
 }
 
-.storyPage-text {
-  flex: 2 1 auto;
+.storyPage-text p {
+  margin: 0.5rem;
+  line-height: 1.3;
 }
