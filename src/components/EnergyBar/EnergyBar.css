@@ -16,10 +16,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: var(--color-background_title);
-  border: var(--border);
-  border-radius: 12px;
+  background-image: url(/icon/08_skore-bar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: var(--font-size-bigger);
   font-weight: var(--font-weight-bold);
 }
