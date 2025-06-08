@@ -38,7 +38,7 @@ body,
 .container,
 .homepage-content,
 .page-wrapper {
-  min-height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -49,4 +49,3 @@ html {
   font-size: var(--font-size-normal);
   color: var(--color-text_border)
 }
-
