@@ -3,11 +3,12 @@ import gameData from '../../data/gameData.json';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { Link } from 'react-router-dom';
 import { TypewriterText } from '../TypewriterText/TypewriterText';
+import "./HappyEnd.css"
 
 export const HappyEnd = () => {
   return (
     <>
-      <img src={gameData[10].actionImage} />
+      <img className="backgroundImage-center" src="/images/301_vyhra.png" />
 
       <footer className="gameLevel-footer">
         <div className="story-container">
