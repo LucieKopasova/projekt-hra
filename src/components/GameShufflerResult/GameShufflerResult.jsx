@@ -6,7 +6,6 @@ export const GameshufflerResult = ({ resultTarget }) => {
   const resultCount = useAnimatedCount(startValue, resultTarget);
   return (
     <>
-    
       <div className="result-exams">
         <p>{resultCount}</p>
       </div>
