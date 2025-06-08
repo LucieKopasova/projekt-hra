@@ -1,11 +1,13 @@
 import './EnergyBar.css';
 
-export const EnergyBar = ({energy}) => {
-  
+export const EnergyBar = ({energy, energyBarClassName}) => {
+  const handleEnergyClassName = () => {
+    
+  }
   
   return (
     <header className="header">
-      <div className="score">{energy}</div>
+      <div className={energyBarClassName}>{energy}</div>
       
     </header>
   )

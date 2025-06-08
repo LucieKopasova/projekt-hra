@@ -7,6 +7,7 @@ import { useState } from "react";
 export const GamePage = () => {
 
    const [energy, setEnergy] = useState(100);
+   const [energyBarClassName, setEnergyBarClassName] = useState('');
   
       const handleCalcualiton = (exampleValue) => {
         setEnergy((oldEnergy) => oldEnergy - Number(exampleValue))
@@ -20,7 +21,7 @@ export const GamePage = () => {
     <div className="page-wrapper">
 
 
-      <EnergyBar energy={energy}/>
+      <EnergyBar energy={energy} energyBarClassName={energyBarClassName}/>
 
 
 
@@ -28,6 +29,7 @@ export const GamePage = () => {
 
       <GameContainer 
       onCalculation={handleCalcualiton}
+      onEnergyClassChange={setEnergyBarClassName}
       energy={energy}/>
 
 

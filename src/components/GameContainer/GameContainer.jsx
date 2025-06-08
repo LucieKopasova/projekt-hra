@@ -5,7 +5,7 @@ import { HappyEnd } from '../HappyEnd/HappyEnd';
 import { useState } from 'react';
 import gameData from '../../data/gameData.json'
 
-export const GameContainer = ({ onCalculation, energy }) => {
+export const GameContainer = ({ onCalculation, energy, onEnergyClassChange }) => {
 
   const [componentNumber, setComponentNumber] = useState(1)
  
@@ -28,17 +28,33 @@ export const GameContainer = ({ onCalculation, energy }) => {
   }
 
   const swithComponent = () => {
+      let energyBarClassName = ""
+
     if (energy < 0) {
-      return <BadEnd /> 
-    } else if ( objectId > 110) {
-      return <HappyEnd />
-    } else if (componentNumber === 1) {
+      energyBarClassName = "score score-none"
+      onEnergyClassChange?.(energyBarClassName);
+      return <BadEnd/> 
+    } 
+    
+    else if ( objectId > 110) {
+      energyBarClassName = "score score-none"
+      onEnergyClassChange?.(energyBarClassName);
+      return <HappyEnd/>
+    } 
+    
+    else if (componentNumber === 1) {
+      energyBarClassName = "score"
+      onEnergyClassChange?.(energyBarClassName);
       return <GameMap 
       onMapClick={handleMapClick} 
       initMapBackground={gameDataObject.mapImage}
       />
-    } else if (componentNumber === 2) {
-      return <GameLevel
+    } 
+    
+    else if (componentNumber === 2) {
+      energyBarClassName = "score"
+      onEnergyClassChange?.(energyBarClassName);
+      return <GameLevel 
         onCalculation={onCalculation}
         onGameLevelClick={handleGameLevelClick}
         initBlockerTarget={gameDataObject.target}
