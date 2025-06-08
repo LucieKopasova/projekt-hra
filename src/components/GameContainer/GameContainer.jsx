@@ -24,13 +24,13 @@ export const GameContainer = ({ onCalculation, energy }) => {
     setObjectId((oldObjectId) =>
     oldObjectId + 1)
   
-    console.log(objectId)
+
   }
 
   const swithComponent = () => {
     if (energy < 0) {
       return <BadEnd /> 
-    } else if (/* componentNumber === 3 */ objectId > 110) {
+    } else if ( objectId > 110) {
       return <HappyEnd />
     } else if (componentNumber === 1) {
       return <GameMap 
@@ -44,6 +44,7 @@ export const GameContainer = ({ onCalculation, energy }) => {
         initBlockerTarget={gameDataObject.target}
         initBlockerBackground={gameDataObject.actionImage}
         gameDataObject={gameDataObject}
+        objectId={objectId}
       />
     } 
     
