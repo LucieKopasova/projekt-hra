@@ -1,0 +1,51 @@
+/* ikony zvuk a domů */
+
+.app-icons {
+  display: flex;
+  gap: 14px;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+}
+
+.icon-soundSwitch {
+  background-color: transparent;
+  border: none;
+  width: 56px;
+  height: 56px;
+}
+
+.icon-homeButton {
+  background-color: transparent;
+  border: none;
+  width: 56px;
+  height: 56px;
+}
+
+
+/* šipka pokračovat */
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  background-image: url(/icon/06_sipka-pokracovat_hrat-znovu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 78px;
+  font-size: var(--font-size-titles);
+  text-indent: -18px;
+  right: 0.5rem;
+  bottom: 1rem;
+  z-index: 998;
+  position: fixed;
+  color: var(--color-text_border);
+
+
+}
+
+.gameLevel-arrow-position {
+  flex: 0 0 auto;
+  position: static;
+}

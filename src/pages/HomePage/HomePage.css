@@ -1,0 +1,52 @@
+.homepage-content {
+
+  background-image: url(/images/201_uvod_s_tyci.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.game-title {
+  font-family: "Luckiest Guy", cursive;
+  color: var(--color-background_title);
+  font-size: 7rem;
+  justify-content: center;
+  margin-top: 4rem;
+  display: flex;
+  align-items: end;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.homepage-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.homepage-btn-start {
+  all: unset;
+  font-size: var(--font-size-bigger);
+  background-image: url(/icon/04_sipka-hrát.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+
+}
+
+.homepage-btn-rules {
+  all: unset;
+  font-size: var(--font-size-bigger);
+  background-image: url(/icon/05_sipka-pravidla.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+}

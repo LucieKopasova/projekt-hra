@@ -1,0 +1,25 @@
+.header {
+  grid-area: header;
+  margin: 0;
+  position: relative;
+  top: 1rem;
+
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.score {
+  grid-column: 3 / 4;
+  align-self: center;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-background_title);
+  border: var(--border);
+  border-radius: 12px;
+  font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
+}

@@ -1,0 +1,28 @@
+.rulesPage-content {
+  background-image: url(/images/203_pravidla.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 3rem 0 2rem 2rem;
+}
+
+.rulesPage-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  background-color: var(--color-background_title-opacity);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+.rulesPage-title {
+  flex: 0 1 auto;
+  font-size: var(--font-size-titles);
+  height: auto;
+}
+
+.rulesPage-text {
+  flex: 2 1 auto;
+}

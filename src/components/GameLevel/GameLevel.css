@@ -1,0 +1,111 @@
+.gamelevel-game {
+  grid-area: game;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 15% 80% auto;
+  grid-template-areas: " . . . . . "
+    " result-exams  result-exams  .  result-blocker result-blocker"
+    " exams exams . blocker blocker"
+    " . . . . . ";
+  width: 100%;
+  max-width: 1650px;
+  height: 100%;
+  grid-column: 2 / 7;
+}
+
+/* výsledek */
+
+.result-exams {
+  grid-area: result-exams;
+  justify-self: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-background_title);
+  box-shadow: var(--box-shadow);
+  font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
+}
+
+/* hodnota překážky */
+
+.result-blocker {
+  grid-area: result-blocker;
+  justify-self: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  right: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-background_title);
+  box-shadow: var(--box-shadow);
+  font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
+
+}
+
+/* 
+příklady */
+
+.examples {
+  grid-area: exams;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 3rem;
+  margin-left: 2rem;
+  justify-content: center;
+
+}
+
+.example-button {
+  min-width: 100%;
+  height: 100px;
+  width: 100%;
+  max-width: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text_border);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-background_title);
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: var(--box-shadow);
+  font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
+}
+
+.example-button:disabled {
+  background-color: va(--color-background_disable);
+  color: var(--color-text_disable)
+}
+
+.example-button:not(:disabled):hover,
+.example-button:not(:disabled):focus {
+  background-color: var(--color-background_hover);
+  cursor: pointer;
+}
+
+/* překážka */
+
+.blocker {
+  grid-area: blocker;
+  margin-right: 2rem;
+}

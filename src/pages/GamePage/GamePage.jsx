@@ -1,4 +1,5 @@
 import "/global.css";
+import "./GamePage.css";
 import { GameContainer } from '../../components/GameContainer/GameContainer';
 import { EnergyBar } from "../../components/EnergyBar/EnergyBar";
 import { useState } from "react";

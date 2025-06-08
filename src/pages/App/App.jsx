@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import './style.css';
+import './App.css'
 import {SoundOnIcon} from '../../components/SoundOnIcon/SoundOnIcon';
 import {SoundOffIcon} from '../../components/SoundOffIcon/SoundOffIcon';
 import { HomeIcon } from '../../components/HomeIcon/HomeIcon';

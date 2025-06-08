@@ -1,4 +1,5 @@
 import { TypewriterText } from "../TypewriterText/TypewriterText"
+import './GameLevelFooter.css';
 
 
 export const GameLevelFooter = ({onGameLevelClick, text}) => {

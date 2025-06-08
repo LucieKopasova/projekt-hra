@@ -1,5 +1,6 @@
 
 import '/global.css';
+import './GameLevel.css';
 import gameData from '../../data/gameData.json';
 import { Gameschuffler } from '../GameSchuffler/GameSchuffler';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
