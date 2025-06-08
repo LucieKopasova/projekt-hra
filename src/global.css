@@ -3,11 +3,13 @@
   --color-text_border: #2c2619;
   --color-background_title: #efd6a0;
   --color-background_title-opacity: rgba(239, 214, 160, 0.88);
+  --color-text_disable: #a89c85;
+  --color-background_hover: #e6c98a;
+  --color-background_disable: #f3e7c5;
 
 
   /* Stíny a rámečky */
-  --box-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.1),
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
     0 4px 8px rgba(0, 0, 0, 0.06);
 
   --border: 4px solid var(--color-text_border);
@@ -55,7 +57,7 @@ html {
 .arrow {
   background-color: transparent;
   border: none;
-  background-image: url(./assets/06_sipka-pokracovat_hrat-znovu.png);
+  background-image: url(/icon/06_sipka-pokracovat_hrat-znovu.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
@@ -104,7 +106,7 @@ html {
 
 .homepage-content {
 
-  background-image: url(./assets/201_uvod_s_tyci.png);
+  background-image: url(/images/201_uvod_s_tyci.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -137,7 +139,7 @@ html {
 .homepage-btn-start {
   all: unset;
   font-size: var(--font-size-bigger);
-  background-image: url(/assets/04_sipka-hrát.png);
+  background-image: url(/icon/04_sipka-hrát.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -148,7 +150,7 @@ html {
 .homepage-btn-rules {
   all: unset;
   font-size: var(--font-size-bigger);
-  background-image: url(/assets/05_sipka-pravidla.png);
+  background-image: url(/icon/05_sipka-pravidla.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -158,7 +160,7 @@ html {
 /* 2. Pravidla (Lucka) */
 
 .rulesPage-content {
-  background-image: url(./assets/203_pravidla.png);
+  background-image: url(/images/203_pravidla.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -191,7 +193,7 @@ html {
 /* 3. Příběh */
 
 .storyPage-content {
-  background-image: url(./assets/202_pribeh.png);
+  background-image: url(/images/202_pribeh.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -380,6 +382,18 @@ příklady */
   font-size: var(--font-size-bigger);
   font-weight: var(--font-weight-bold);
 }
+
+.example-button:disabled {
+  background-color: va(--color-background_disable);
+  color: var(--color-text_disable)
+}
+
+.example-button:not(:disabled):hover,
+.example-button:not(:disabled):focus {
+  background-color: var(--color-background_hover);
+  cursor: pointer;
+}
+
 
 
 /* překážka */
