@@ -1,3 +1,4 @@
+import { TypewriterText } from "../TypewriterText/TypewriterText"
 
 
 export const GameLevelFooter = ({onGameLevelClick, text}) => {
@@ -5,7 +6,9 @@ export const GameLevelFooter = ({onGameLevelClick, text}) => {
         <>
         <footer className="gameLevel-footer">
             <div className='story-container'>
-            <p>{text}</p>
+            <p>{/* {text} */}
+                <TypewriterText text={text}/>
+            </p>
             </div>
             <button 
             className="arrow gameLevel-arrow-position"
