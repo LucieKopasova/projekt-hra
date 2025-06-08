@@ -1,5 +1,5 @@
 import './GameShufflerResult.css';
-import { useAnimatedCount } from '../AnimationNumber/animationNumber';
+import { useAnimatedCount } from '../AnimationNumber/AnimationNumber';
 
 export const GameshufflerResult = ({ resultTarget }) => {
   const startValue = 0;
