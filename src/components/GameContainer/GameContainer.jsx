@@ -45,6 +45,7 @@ export const GameContainer = ({ onCalculation, energy }) => {
         initBlockerBackground={gameDataObject.actionImage}
         gameDataObject={gameDataObject}
         objectId={objectId}
+        energy={energy}
       />
     } 
     

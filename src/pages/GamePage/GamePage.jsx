@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export const GamePage = () => {
 
-   const [energy, setEnergy] = useState('100');
+   const [energy, setEnergy] = useState(100);
   
       const handleCalcualiton = (exampleValue) => {
         setEnergy((oldEnergy) => oldEnergy - Number(exampleValue))

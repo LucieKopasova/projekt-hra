@@ -10,7 +10,7 @@ import { GameBlocker } from '../GameBlocker/GameBlocker';
 import { text } from 'framer-motion/client';
 
 
-export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, initBlockerBackground, gameDataObject, objectId }) => {
+export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, initBlockerBackground, gameDataObject, objectId, energy }) => {
 
   const [resultTarget, setResultTarget] = useState(0);
   const [blockerTarget, setBlockerTarget] = useState(initBlockerTarget);
@@ -29,11 +29,7 @@ export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, 
 
 
   let text ='' 
-  if (objectId === 301) {
-    text = gameDataObject.story
-  } else if (objectId === 302) {
-    text = gameDataObject.story
-  } else if (resultTarget === 0) {
+  if (resultTarget === 0) {
     text = gameDataObject.story
   } else if (resultTarget > initBlockerTarget) {
     text = gameDataObject.fail
@@ -44,6 +40,8 @@ export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, 
   }
 
 console.log(objectId)
+console.log(gameDataObject)
+
   return (
     <>
 
@@ -68,7 +66,6 @@ console.log(objectId)
       text={text} 
       onGameLevelClick={onGameLevelClick}
       blockerTarget = {blockerTarget}
-      objectId={objectId}
       />
 
     </>
