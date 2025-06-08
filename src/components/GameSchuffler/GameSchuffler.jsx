@@ -82,8 +82,9 @@ const [disabledButtons, setDisabledButtons] = useState([]);
   return (
     <div className="examples">
       {shuffledResults.map((result) => (
-        <div key={result.examplesValue}>
+        
           <button
+            key={result.examplesValue}
             className="example-button"
             onClick={() => {
               if (getSoundOn()) {
@@ -96,7 +97,7 @@ const [disabledButtons, setDisabledButtons] = useState([]);
           >
             {result.text}
           </button>
-        </div>
+        
       ))}
     </div>
   );
