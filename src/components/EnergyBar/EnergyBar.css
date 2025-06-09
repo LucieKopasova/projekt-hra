@@ -10,7 +10,7 @@
 }
 
 .score {
-  grid-column: 3 / 4;
+  grid-column: 2 / 5;
   align-self: center;
   height: 120px;
   display: flex;
