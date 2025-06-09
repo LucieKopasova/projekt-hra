@@ -1,6 +1,27 @@
-.MapImage {
-  background-image: url('../../assets/101_uvod.png');
-  width: 900px;
-  height: 600px;
-  background-position: center;
+.background-map--position20vs80 {
+  object-position: 20% 80%;
+}
+
+.background-map--position30vs70 {
+  object-position: 30% 70%;
+}
+
+.background-map--center {
+  object-position: center;
+}
+
+.background-map--position60vs40 {
+  object-position: 60% 40%;
+}
+
+.background-map--position75vs25 {
+  object-position: 75% 25%;
+}
+
+.background-map--position80vs20 {
+  object-position: 80% 20%;
+}
+
+.background-map--position90vs10 {
+  object-position: 90% 10%;
 }

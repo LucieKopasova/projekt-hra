@@ -50,6 +50,7 @@ export const GameContainer = ({
         <GameMap
           onMapClick={handleMapClick}
           initMapBackground={gameDataObject.mapImage}
+           objectId={objectId} 
         />
       );
     } else if (componentNumber === 2) {

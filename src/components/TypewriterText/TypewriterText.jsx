@@ -10,6 +10,7 @@ export const TypewriterText = ({text}) => {
                     autoStart: true,
                     loop: false,
                     delay: 20,
+                    cursor: '',
                 }}
             />
         </>
