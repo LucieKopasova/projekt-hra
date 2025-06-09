@@ -65,6 +65,7 @@
   font-weight: var(--font-weight-bold);
 }
 
+
 @media (max-height: 800px) {
   .example-button {
     font-size: 1.5rem;
@@ -78,7 +79,8 @@
 
 .example-button:not(:disabled):hover,
 .example-button:not(:disabled):focus {
-  background-color: var(--color-background_hover);
+  background-color: #e6c278;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 

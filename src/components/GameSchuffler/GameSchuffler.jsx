@@ -5,6 +5,7 @@ import soundclik from '../../sounds/mouse-click.mp3';
 import { getSoundOn } from '../../pages/App/App';
 
 export const Gameschuffler = ({
+  handleMove,
   onExams,
   blockerTarget,
   initBlockerTarget,
@@ -70,11 +71,12 @@ export const Gameschuffler = ({
 
   const [shuffledResults] = useState(initResults);
 
-/* zneaktivnění zvoleného příkladu */
+  /* zneaktivnění zvoleného příkladu */
 
-const [disabledButtons, setDisabledButtons] = useState([]);
+  const [disabledButtons, setDisabledButtons] = useState([]);
 
-  const handleExampleClick = (value) => setDisabledButtons((prev) => [...prev, value])
+  const handleExampleClick = (value) =>
+    setDisabledButtons((prev) => [...prev, value]);
 
   //RETURN --------------------------
   //---------------------------------
@@ -82,22 +84,23 @@ const [disabledButtons, setDisabledButtons] = useState([]);
   return (
     <div className="examples">
       {shuffledResults.map((result) => (
-        
-          <button
-            key={result.examplesValue}
-            className="example-button"
-            onClick={() => {
-              if (getSoundOn()) {
-                play();
-              }
-              onExams(result.examplesValue);
-              handleExampleClick(result.examplesValue)
-            }}
-            disabled={blockerTarget <= 0 || disabledButtons.includes(result.examplesValue) }
-          >
-            {result.text}
-          </button>
-        
+        <button
+          key={result.examplesValue}
+          className="example-button"
+          onClick={() => {
+            if (getSoundOn()) {
+              play();
+            }
+            onExams(result.examplesValue);
+            handleExampleClick(result.examplesValue);
+            handleMove();
+          }}
+          disabled={
+            blockerTarget <= 0 || disabledButtons.includes(result.examplesValue)
+          }
+        >
+          {result.text}
+        </button>
       ))}
     </div>
   );

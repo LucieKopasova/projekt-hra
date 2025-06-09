@@ -1,4 +1,3 @@
-
 import '/global.css';
 import './GameLevel.css';
 import gameData from '../../data/gameData.json';
@@ -9,65 +8,69 @@ import { useState } from 'react';
 import { GameBlocker } from '../GameBlocker/GameBlocker';
 import { text } from 'framer-motion/client';
 
-
-export const GameLevel = ({ onCalculation, onGameLevelClick, initBlockerTarget, initBlockerBackground, gameDataObject, objectId, energy }) => {
-
+export const GameLevel = ({
+  handleMove,
+  buttonRef,
+  onCalculation,
+  onGameLevelClick,
+  initBlockerTarget,
+  initBlockerBackground,
+  gameDataObject,
+  objectId,
+  energy,
+}) => {
   const [resultTarget, setResultTarget] = useState(0);
   const [blockerTarget, setBlockerTarget] = useState(initBlockerTarget);
 
   const handleClick = (exampleValue) => {
     setResultTarget(exampleValue);
-    onCalculation(exampleValue)
+    onCalculation(exampleValue);
 
-    setBlockerTarget((oldBlockerTarget) => oldBlockerTarget - Number(exampleValue))
-
-
+    setBlockerTarget(
+      (oldBlockerTarget) => oldBlockerTarget - Number(exampleValue),
+    );
   };
 
-   console.log(initBlockerTarget)
-  console.log(resultTarget)
+  console.log(initBlockerTarget);
+  console.log(resultTarget);
 
-
-  let text ='' 
+  let text = '';
   if (resultTarget === 0) {
-    text = gameDataObject.story
+    text = gameDataObject.story;
   } else if (resultTarget > initBlockerTarget) {
-    text = gameDataObject.fail
+    text = gameDataObject.fail;
   } else if (resultTarget === initBlockerTarget) {
-    text = gameDataObject.success
+    text = gameDataObject.success;
   } else {
-    text = gameDataObject.again
+    text = gameDataObject.again;
   }
 
-console.log(objectId)
-console.log(gameDataObject)
+  console.log(objectId);
+  console.log(gameDataObject);
 
   return (
     <>
-
       <img src={initBlockerBackground} />
 
       <div className="gamelevel-game">
-
-        <GameshufflerResult resultTarget={resultTarget} />
+        <GameshufflerResult buttonRef={buttonRef} resultTarget={resultTarget} />
 
         <GameBlocker blockerTarget={blockerTarget} />
 
         <Gameschuffler
+          handleMove={handleMove}
           onExams={handleClick}
           initBlockerTarget={initBlockerTarget}
           blockerTarget={blockerTarget}
         />
         <section className="blocker"></section>
-
       </div>
 
-      <GameLevelFooter 
-      text={text} 
-      onGameLevelClick={onGameLevelClick}
-      blockerTarget = {blockerTarget}
+      <GameLevelFooter
+        text={text}
+        onGameLevelClick={onGameLevelClick}
+        blockerTarget={blockerTarget}
       />
-
     </>
-  )
+  );
 };
