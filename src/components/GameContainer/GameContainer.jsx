@@ -4,6 +4,7 @@ import { GameMap } from '../GameMap/GameMap';
 import { HappyEnd } from '../HappyEnd/HappyEnd';
 import { useState } from 'react';
 import gameData from '../../data/gameData.json';
+import Delayed from 'react-delayed';
 
 export const GameContainer = ({
   handleMove,
@@ -33,7 +34,11 @@ export const GameContainer = ({
     if (energy < 0) {
       energyBarClassName = 'score score-none';
       onEnergyClassChange?.(energyBarClassName);
-      return <BadEnd />;
+      return (
+        <Delayed wait={2000}>
+          <BadEnd />
+        </Delayed>
+      );
     } else if (objectId > 110) {
       energyBarClassName = 'score score-none';
       onEnergyClassChange?.(energyBarClassName);

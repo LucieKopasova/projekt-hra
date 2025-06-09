@@ -4,7 +4,7 @@ import gameData from '../../data/gameData.json';
 import { Gameschuffler } from '../GameSchuffler/GameSchuffler';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { GameBlocker } from '../GameBlocker/GameBlocker';
 import { text } from 'framer-motion/client';
 
@@ -21,6 +21,8 @@ export const GameLevel = ({
 }) => {
   const [resultTarget, setResultTarget] = useState(0);
   const [blockerTarget, setBlockerTarget] = useState(initBlockerTarget);
+  const [delayedBlockerTarget, setDelayedBlockerTarget] =
+    useState(initBlockerTarget);
 
   const handleClick = (exampleValue) => {
     setResultTarget(exampleValue);
@@ -30,9 +32,6 @@ export const GameLevel = ({
       (oldBlockerTarget) => oldBlockerTarget - Number(exampleValue),
     );
   };
-
-  console.log(initBlockerTarget);
-  console.log(resultTarget);
 
   let text = '';
   if (resultTarget === 0) {
@@ -45,8 +44,14 @@ export const GameLevel = ({
     text = gameDataObject.again;
   }
 
-  console.log(objectId);
-  console.log(gameDataObject);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setDelayedBlockerTarget(blockerTarget);
+    }, 1500);
+    console.log(blockerTarget);
+    console.log(initBlockerTarget);
+    return () => clearTimeout(timeout);
+  }, [blockerTarget]);
 
   return (
     <>
@@ -55,7 +60,10 @@ export const GameLevel = ({
       <div className="gamelevel-game">
         <GameshufflerResult buttonRef={buttonRef} resultTarget={resultTarget} />
 
-        <GameBlocker blockerTarget={blockerTarget} />
+        <GameBlocker
+          blockerTarget={delayedBlockerTarget}
+          startValueBlocker={initBlockerTarget}
+        />
 
         <Gameschuffler
           handleMove={handleMove}

@@ -20,5 +20,12 @@
 }
 
 .result-blocker--negative {
-    color: red;
+  color: #D32F2F;
+  border: var(--color-text_disable);
+
+}
+
+.result-blocker--zero {
+  color: var(--color-text_disable);
+  border: var(--color-text_disable);
 }
