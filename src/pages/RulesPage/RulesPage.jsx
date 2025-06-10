@@ -7,21 +7,13 @@ export const RulesPage = () => {
       <section className="rulesPage-text-container">
         <h2 className="rulesPage-title">Pravidla</h2>
         <div className="rulesPage-text">
-          <p>
-          ​​Batoň se vydal na velkou výpravu! Je plný síly a má spoustu
-          energie, kterou uvidíš v horní části obrazovky. Na každém políčku
-          uvidíš, kolik energie Batoň potřebuje na splnění úkolu (například 5).
-          Tvým úkolem je vybrat takový příklad (například 2 + 3), který dává
-          správné číslo. </p>
-          <p>
-          Když vybereš správně, Batoň může pokračovat dál.</p>
-          <p> Když
-          vybereš menší číslo, musíš to zkusit znovu.</p>
-          <p> Když vybereš větší číslo,
-          Batoň sice pokračuje, ale ztratí víc energie, než by musel. </p>
-          <p> Hodnota z
-          každého vybraného příkladu se odečte od skóre. Vyhraješ, když Batoň
-          dojde až do cíle dřív, než mu dojde energie.</p>
+          <p>Batoň se vydal na svou první velkou výpravu. Aby došel až do cíle, musí si dobře rozvrhnout svou energii. Kolik energie mu zbývá, vidíš nahoře na obrazovce. </p>
+          <p>Na každém políčku tě čeká překážka – její hodnota je zobrazena nad Batoněm. Vlevo najdeš nabídku matematických příkladů. Tvým úkolem je vybrat takový příklad, jehož výsledek pomůže Batoňovi překážku překonat. Příklad vybereš kliknutím na něj. Jeho výsledek se odečte od hodnoty překážky, ale hlavně od celkové energie. </p>
+          <p><strong>Jak správně vybírat:</strong></p>
+          <p><strong>Ideální volba:</strong>  Výsledek příkladu se rovná hodnotě překážky. Pokračuješ dál a z energie se odečte právě tolik, kolik je potřeba. </p>
+          <p><strong>Vyšší hodnota:</strong>  Můžeš překážku překonat, ale z energie se ti odečte víc, než by bylo nutné. </p>
+          <p><strong>Nižší hodnota:</strong>  Příkladem překážku nepřekonáš. Musíš vybrat další, ale <strong>pozor</strong> – v takovém případě se ti od energie odečtou všechny hodnoty vybraných příkladů v tomto kole.</p>
+          <p>Přemýšlej strategicky, ať Batoňovi energie vydrží co nejdéle. Cílem je dojít až na konec dřív, než se dostane na nulu. Šťastnou cestu!</p>
         </div>
       </section>
       <Link to="/pribeh" className="arrow arrow-link">
