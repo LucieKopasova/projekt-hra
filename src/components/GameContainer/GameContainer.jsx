@@ -35,20 +35,27 @@ export const GameContainer = ({
       return () => clearTimeout(timeout);
     }
   }, [energy]);
+
+  useEffect(() => {
+    let energyBarClassName = '';
+    if (showBadEnd || objectId > 110) {
+      energyBarClassName = 'score score-none';
+    } else {
+      energyBarClassName = 'score';
+    }
+    onEnergyClassChange?.(energyBarClassName);
+  }, [showBadEnd, objectId, onEnergyClassChange]);
+
+
+
   const switchComponent = () => {
     let energyBarClassName = '';
 
     if (showBadEnd) {
-      energyBarClassName = 'score score-none';
-      onEnergyClassChange?.(energyBarClassName);
       return <BadEnd />;
     } else if (objectId > 110) {
-      energyBarClassName = 'score score-none';
-      onEnergyClassChange?.(energyBarClassName);
       return <HappyEnd />;
     } else if (componentNumber === 1) {
-      energyBarClassName = 'score';
-      onEnergyClassChange?.(energyBarClassName);
       return (
         <GameMap
           onMapClick={handleMapClick}
@@ -57,8 +64,6 @@ export const GameContainer = ({
         />
       );
     } else if (componentNumber === 2) {
-      energyBarClassName = 'score';
-      onEnergyClassChange?.(energyBarClassName);
       return (
         <GameLevel
           handleMove={handleMove}
