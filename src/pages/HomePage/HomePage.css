@@ -23,6 +23,12 @@
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .game-title  {
+    font-size: 4rem;
+  }
+}
+
 .homepage-buttons {
   display: flex;
   flex-direction: column;
