@@ -2,7 +2,7 @@
   background-image: url(/images/203_pravidla.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   height: 100vh;
   display: grid;
   grid-template-columns: 55% 45%;
@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   height: fit-content;
-  max-width: 600px;
+  max-width: 800px;
   background-color: var(--color-background_title-opacity);
   border-radius: 30px;
   padding: 2rem;
