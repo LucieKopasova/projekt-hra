@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { useEnergyAnimation } from '../../components/AnimationEnergyBar/AnimationEnegryBar';
 
 export const GamePage = () => {
-  const [energy, setEnergy] = useState(10);
+  const [energy, setEnergy] = useState(100);
   const [energyBarClassName, setEnergyBarClassName] = useState('');
 
   const { particlesRef, chargeRef, buttonRef, handleMove } =

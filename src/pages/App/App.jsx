@@ -15,7 +15,10 @@ export const setSoundOn = (value) => {
 export const getSoundOn = () => isSoundOn;
 
 export const App = () => {
-  const [play, { stop }] = useSound(soundtrackSong, { volume: 0.5 });
+  const [play, { stop }] = useSound(soundtrackSong, {
+    volume: 0.5,
+    loop: true,
+  });
   const [isPlaying, setIsPlaying] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(getSoundOn());
   const [hasInteracted, setHasInteracted] = useState(false);
