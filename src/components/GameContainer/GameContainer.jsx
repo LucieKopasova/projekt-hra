@@ -2,7 +2,7 @@ import { BadEnd } from '../BadEnd/BadEnd';
 import { GameLevel } from '../GameLevel/GameLevel';
 import { GameMap } from '../GameMap/GameMap';
 import { HappyEnd } from '../HappyEnd/HappyEnd';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import gameData from '../../data/gameData.json';
 import Delayed from 'react-delayed';
 
@@ -14,10 +14,9 @@ export const GameContainer = ({
   onEnergyClassChange,
 }) => {
   const [componentNumber, setComponentNumber] = useState(1);
-
   const [objectId, setObjectId] = useState(101);
-
   const gameDataObject = gameData.find((item) => objectId === item.id);
+  const [showBadEnd, setShowBadEnd] = useState(false);
 
   const handleMapClick = () => {
     setComponentNumber(2);
@@ -28,17 +27,22 @@ export const GameContainer = ({
     setObjectId((oldObjectId) => oldObjectId + 1);
   };
 
+  useEffect(() => {
+    if (energy < 0) {
+      const timeout = setTimeout(() => {
+        setShowBadEnd(true);
+      }, 2000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [energy]);
   const swithComponent = () => {
     let energyBarClassName = '';
 
-    if (energy < 0) {
+    if (showBadEnd) {
       energyBarClassName = 'score score-none';
       onEnergyClassChange?.(energyBarClassName);
-      return (
-        <Delayed wait={2000}>
-          <BadEnd />
-        </Delayed>
-      );
+      return <BadEnd />;
     } else if (objectId > 110) {
       energyBarClassName = 'score score-none';
       onEnergyClassChange?.(energyBarClassName);
@@ -50,7 +54,7 @@ export const GameContainer = ({
         <GameMap
           onMapClick={handleMapClick}
           initMapBackground={gameDataObject.mapImage}
-           objectId={objectId} 
+          objectId={objectId}
         />
       );
     } else if (componentNumber === 2) {
