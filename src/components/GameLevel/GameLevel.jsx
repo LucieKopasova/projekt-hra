@@ -23,6 +23,7 @@ export const GameLevel = ({
   const [blockerTarget, setBlockerTarget] = useState(initBlockerTarget);
   const [delayedBlockerTarget, setDelayedBlockerTarget] =
     useState(initBlockerTarget);
+  const [delayedArrow, setDelayedArrow] = useState(initBlockerTarget);
 
   const handleClick = (exampleValue) => {
     setResultTarget(exampleValue);
@@ -45,12 +46,18 @@ export const GameLevel = ({
   }
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    const timeout1 = setTimeout(() => {
       setDelayedBlockerTarget(blockerTarget);
-    }, 1500);
-    console.log(blockerTarget);
-    console.log(initBlockerTarget);
-    return () => clearTimeout(timeout);
+    }, 1300);
+
+    const timeout2 = setTimeout(() => {
+      setDelayedArrow(blockerTarget);
+    }, 2500);
+
+    return () => {
+      clearTimeout(timeout1);
+      clearTimeout(timeout2);
+    };
   }, [blockerTarget]);
 
   return (
@@ -77,7 +84,7 @@ export const GameLevel = ({
       <GameLevelFooter
         text={text}
         onGameLevelClick={onGameLevelClick}
-        blockerTarget={blockerTarget}
+        blockerTarget={delayedArrow}
       />
     </>
   );
