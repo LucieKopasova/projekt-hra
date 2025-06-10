@@ -25,6 +25,16 @@
   margin: 2rem;
 }
 
+@media (max-width: 1000px) {
+  .storyPage-text-container  {
+    margin: 1rem;
+    max-width: 1000px;
+  }
+  .storyPage-content {
+    grid-template-columns: 100%;
+  }
+}
+
 .storyPage-title {
   font-size: var(--font-size-titles);
   margin: 0;

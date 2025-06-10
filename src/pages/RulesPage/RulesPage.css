@@ -25,6 +25,17 @@
   margin: 2rem;
 }
 
+@media (max-width: 1000px) {
+  .rulesPage-text-container  {
+    margin: 1rem;
+    max-width: 1000px;
+  }
+  .rulesPage-content {
+    grid-template-columns: 100%;
+  }
+
+}
+
 .rulesPage-title {
   font-size: var(--font-size-titles);
   margin: 0;
