@@ -7,12 +7,6 @@ export const useEnergyAnimation = (particleCount = 5) => {
   const buttonRef = useRef(null);
 
   const handleMove = () => {
-    console.log('handleMove spuštěna');
-    console.log('refs:', {
-      particles: particlesRef.current,
-      charge: chargeRef.current,
-      button: buttonRef.current,
-    });
     if (!particlesRef.current || !chargeRef.current || !buttonRef.current)
       return; // kotroluje že jsou EnergyBar a příklady na místě
 

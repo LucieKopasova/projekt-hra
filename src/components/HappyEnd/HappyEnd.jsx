@@ -1,9 +1,7 @@
 import '/global.css';
-import gameData from '../../data/gameData.json';
-import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { Link } from 'react-router-dom';
 import { TypewriterText } from '../TypewriterText/TypewriterText';
-import "./HappyEnd.css"
+import './HappyEnd.css';
 
 export const HappyEnd = () => {
   return (

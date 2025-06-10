@@ -1,4 +1,3 @@
-import './GameShufflerResult.css';
 import { useAnimatedCount } from '../AnimationNumber/AnimationNumber';
 
 export const GameshufflerResult = ({ buttonRef, resultTarget }) => {

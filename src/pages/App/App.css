@@ -33,12 +33,13 @@
   background: linear-gradient(to bottom, rgb(185, 160, 102), #a17e3e)
 }
 
-.soundOnIcon:focus,
+
 .soundOnIcon:hover,
-.soundOffIcon:focus,
-.homeButton:focus,
 .soundOffIcon:hover,
-.homeButton:hover {
+.homeButton:hover,
+.soundOnIcon:focus,
+.soundOffIcon:focus,
+.homeButton:focus {
   background: linear-gradient(to bottom, rgb(230, 210, 150), #b9934c);
 }
 

@@ -1,12 +1,10 @@
 import '/global.css';
 import './GameLevel.css';
-import gameData from '../../data/gameData.json';
-import { Gameschuffler } from '../GameSchuffler/GameSchuffler';
+import { Gameshuffler } from '../GameShuffler/GameShuffler';
 import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { GameshufflerResult } from '../GameShufflerResult/GameShufflerResult';
 import { useState, useEffect } from 'react';
 import { GameBlocker } from '../GameBlocker/GameBlocker';
-import { text } from 'framer-motion/client';
 
 export const GameLevel = ({
   handleMove,
@@ -16,8 +14,6 @@ export const GameLevel = ({
   initBlockerTarget,
   initBlockerBackground,
   gameDataObject,
-  objectId,
-  energy,
 }) => {
   const [resultTarget, setResultTarget] = useState(0);
   const [blockerTarget, setBlockerTarget] = useState(initBlockerTarget);
@@ -72,7 +68,7 @@ export const GameLevel = ({
           startValueBlocker={initBlockerTarget}
         />
 
-        <Gameschuffler
+        <Gameshuffler
           handleMove={handleMove}
           onExams={handleClick}
           initBlockerTarget={initBlockerTarget}

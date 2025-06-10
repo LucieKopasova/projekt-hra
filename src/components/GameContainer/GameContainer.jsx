@@ -4,7 +4,6 @@ import { GameMap } from '../GameMap/GameMap';
 import { HappyEnd } from '../HappyEnd/HappyEnd';
 import { useState, useEffect } from 'react';
 import gameData from '../../data/gameData.json';
-import Delayed from 'react-delayed';
 
 export const GameContainer = ({
   handleMove,
@@ -36,7 +35,7 @@ export const GameContainer = ({
       return () => clearTimeout(timeout);
     }
   }, [energy]);
-  const swithComponent = () => {
+  const switchComponent = () => {
     let energyBarClassName = '';
 
     if (showBadEnd) {
@@ -75,5 +74,5 @@ export const GameContainer = ({
       );
     }
   };
-  return swithComponent();
+  return switchComponent();
 };

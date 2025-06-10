@@ -4,7 +4,7 @@ import useSound from 'use-sound';
 import soundclik from '../../sounds/mouse-click.mp3';
 import { getSoundOn } from '../../pages/App/App';
 
-export const Gameschuffler = ({
+export const Gameshuffler = ({
   handleMove,
   onExams,
   blockerTarget,

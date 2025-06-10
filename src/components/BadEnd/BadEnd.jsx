@@ -1,9 +1,7 @@
 import '/global.css';
-import gameData from '../../data/gameData.json';
-import { GameLevelFooter } from '../GameLevelFooter/GameLevelFooter';
 import { TypewriterText } from '../TypewriterText/TypewriterText';
 import { Link } from 'react-router-dom';
-import "./BadEnd.css"
+import './BadEnd.css';
 
 export const BadEnd = () => {
   return (
