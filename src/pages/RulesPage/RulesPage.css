@@ -25,10 +25,10 @@
   margin: 2rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .rulesPage-text-container  {
     margin: 1rem;
-    max-width: 1000px;
+    max-width: 1200px;
   }
   .rulesPage-content {
     grid-template-columns: 100%;
